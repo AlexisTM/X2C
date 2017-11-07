@@ -1,0 +1,62 @@
+\XtoCValidation{uRateLimiter FiP32 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block uRateLimiter.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 266 \tabularnewline \hline
+\textbf{CPU cycles} & 36 & 36 & ... & 55 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & -2147483647 & ... & -429496730 \tabularnewline \hline
+\textbf{Init (DSP)} & 0 & 644245094 & ... & 644245094 \tabularnewline \hline
+\textbf{Enable (DSP)} & 0 & 0 & ... & 127 \tabularnewline \hline
+\textbf{In} & 0 & -1 & ... & -0.2 \tabularnewline \hline
+\textbf{Init} & 0 & 0.3 & ... & 0.3 \tabularnewline \hline
+\textbf{Enable} & 0 & 0 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Tr} & \multicolumn{4}{c|}{0.001} \tabularnewline \hline
+\textbf{Tf} & \multicolumn{4}{c|}{0.003} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{4}{c|}{1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & -1 & ... & -0.2 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & -1 & ... & -0.2 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & -2147483647 & ... & -429496730 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & -2147483647 & ... & -429496730 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.1642e-08 ($\pm$25 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 36 \tabularnewline \hline
+Max CPU cycles & 73 \tabularnewline \hline
+Avg CPU cycles & 55 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for General block uRateLimiter.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 37 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Tr} & -10 & -9.444 & ... & 10 \tabularnewline \hline
+\textbf{Tf} & -9 & -8.5 & ... & 9 \tabularnewline \hline
+\textbf{ts\_fact} & 3 & 3 & ... & 3 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{RateDown} & 2147483647 & 2147483647 & ... & 71583 \tabularnewline \hline
+\textbf{RateUp} & 2147483647 & 2147483647 & ... & 64425 \tabularnewline \hline
+\textbf{Exp. RateDown} & 2147483647 & 2147483647 & ... & 71583 \tabularnewline \hline
+\textbf{Exp. RateUp} & 2147483647 & 2147483647 & ... & 64425 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

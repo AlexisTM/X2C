@@ -1,0 +1,83 @@
+\XtoCValidation{uGain Float32 CPU STM32F407ZG}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & STM32F407ZG \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 410 & 410 & ... & 412 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -7.13 & -6.995 & ... & 7.13 \tabularnewline \hline
+\textbf{In} & -7.13 & -6.995 & ... & 7.13 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Gain} & \multicolumn{4}{c|}{2.1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -2.407 & -2.124 & ... & 2.407 \tabularnewline \hline
+\textbf{Exp. Out} & -2.407 & -2.124 & ... & 2.407 \tabularnewline \hline
+\textbf{Out (DSP)} & -2.407 & -2.124 & ... & 2.407 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -2.407 & -2.124 & ... & 2.407 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.8626e-06 ($\pm$4000 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 80 \tabularnewline \hline
+Max CPU cycles & 554 \tabularnewline \hline
+Avg CPU cycles & 397 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Parameter test}{1}
+Parameter test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 538 & 538 & ... & 540 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & \multicolumn{4}{c|}{1.257} \tabularnewline \hline
+\textbf{In} & \multicolumn{4}{c|}{1.257} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Gain} & -3.7 & -3.63 & ... & 3.7 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 1.634 & 1.721 & ... & -1.634 \tabularnewline \hline
+\textbf{Exp. Out} & 1.634 & 1.721 & ... & -1.634 \tabularnewline \hline
+\textbf{Out (DSP)} & 1.634 & 1.721 & ... & -1.634 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 1.634 & 1.721 & ... & -1.634 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.8626e-06 ($\pm$4000 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 80 \tabularnewline \hline
+Max CPU cycles & 554 \tabularnewline \hline
+Avg CPU cycles & 236 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 37 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Gain} & -10 & -9.444 & ... & 10 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{V} & -10 & -9.444 & ... & 10 \tabularnewline \hline
+\textbf{Exp. V} & -10 & -9.444 & ... & 10 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

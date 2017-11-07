@@ -1,0 +1,39 @@
+\XtoCValidation{Limitation FiP32 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Limitation.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 159 \tabularnewline \hline
+\textbf{CPU cycles} & 44 & 44 & ... & 44 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -2147483647 & -2064888123 & ... & 1288490189 \tabularnewline \hline
+\textbf{max (DSP)} & 644245094 & 644245094 & ... & 2147483647 \tabularnewline \hline
+\textbf{min (DSP)} & -858993459 & -858993459 & ... & -2147483647 \tabularnewline \hline
+\textbf{In} & -1 & -0.962 & ... & 0.6 \tabularnewline \hline
+\textbf{max} & 0.3 & 0.3 & ... & 1 \tabularnewline \hline
+\textbf{min} & -0.4 & -0.4 & ... & -1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0.4 & -0.4 & ... & 0.6 \tabularnewline \hline
+\textbf{Exp. Out} & -0.4 & -0.4 & ... & 0.6 \tabularnewline \hline
+\textbf{Out (DSP)} & -858993459 & -858993459 & ... & 1288490189 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -858993459 & -858993459 & ... & 1288490189 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 38 \tabularnewline \hline
+Max CPU cycles & 44 \tabularnewline \hline
+Avg CPU cycles & 40 \tabularnewline \hline
+\end{XtoCtabular}

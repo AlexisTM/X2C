@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html xml:lang="de" > 
+<head>
+<title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,png --> 
+<meta name="src" content="Exp_.tex"> 
+<meta name="date" content="2015-08-04 16:06:00"> 
+<link rel="stylesheet" type="text/css" href="Exp_.css"> 
+</head><body 
+>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Block: Exp</h3>
+<!--l. 1--><p class="noindent" ><HR> <a 
+ id="Q1-1-2"></a> <a 
+ id="x1-1000doc"></a> <hr class="figure"><div class="figure" 
+>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+<!--l. 3--><p class="noindent" ><img 
+src="Exp.png" alt="PIC"  
+>
+                                                                                
+                                                                                
+<!--l. 3--><p class="noindent" ></div><hr class="endfigure">
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><colgroup id="TBL-1-2g"><col 
+id="TBL-1-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-1-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Inports</span></div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-1-2-1"  
+class="td11">  <!--l. 6--><p class="noindent" >In                                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-1-2-2"  
+class="td11">  <!--l. 6--><p class="noindent" >Input
+    u                                                                                                    </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-1-3-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"></colgroup><colgroup id="TBL-2-2g"><col 
+id="TBL-2-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Outports</span></div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-1"  
+class="td11">  <!--l. 12--><p class="noindent" >Out                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-2"  
+class="td11">  <!--l. 12--><p class="noindent" >Result
+    of
+    exp(u)                                                                                           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-3-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-2000"></a>Description:</h5>
+<!--l. 17--><p class="noindent" >Computation of the exponential of the input.
+<!--l. 1--><p class="noindent" >Calculation:
+<table 
+class="equation-star"><tr><td>
+<center class="math-display" >
+<img 
+src="Exp_0x.png" alt="      {
+        eIn  In &#x2264; 0
+Out =   1    In &#x003E; 0
+" class="math-display" ></center></td></tr></table>
+<!--l. 4--><p class="nopar" >
+<!--l. 6--><p class="noindent" >Error for 16 Bit Fixed Point Implementation: <hr class="figure"><div class="figure" 
+>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+<!--l. 8--><p class="noindent" ><img 
+src="Exp_Error.png" alt="PIC"  
+>
+                                                                                
+                                                                                
+<!--l. 9--><p class="noindent" ></div><hr class="endfigure">
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-3000"></a>Implementations:</h5>
+<div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1"><col 
+id="TBL-3-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">FiP8     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-3-1-2"  
+class="td11">  8 Bit Fixed Point Implementation      </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-2-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">FiP16    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-3-2-2"  
+class="td11">  16 Bit Fixed Point Implementation    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">FiP32    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-3-3-2"  
+class="td11">  32 Bit Fixed Point Implementation    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-3-4-1"  
+class="td11">         </td></tr></table></div>
+<!--l. 28--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-4000"></a>Implementation: FiP8</h4>
+<!--l. 28--><p class="noindent" ><HR> <a 
+ id="dx1-4001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-4" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-4-1g"><col 
+id="TBL-4-1"><col 
+id="TBL-4-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-4-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-1-2"  
+class="td11">  FiP8               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-4-2-2"  
+class="td11"> 4848</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-3-2"  
+class="td11">  0.1                  </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-4-4-2"  
+class="td11"> Exp_FiP8.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-5-2"  
+class="td11">  Exp_FiP8.h    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-6-1"  
+class="td11">             </td></tr></table>
+</div>
+<!--l. 41--><p class="noindent" >8 Bit Fixed Point Implementation
+<!--l. 44--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 45-->
+<div class="lstlisting" id="listing-1"><span class="label"><a 
+ id="x1-4002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-4003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-4004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-4005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-4006r5"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">EXP_FIP8</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+<!--l. 56--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-5000"></a>Implementation: FiP16</h4>
+<!--l. 56--><p class="noindent" ><HR> <a 
+ id="dx1-5001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-5" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-5-1g"><col 
+id="TBL-5-1"><col 
+id="TBL-5-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-5-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-2"  
+class="td11">  FiP16               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-2"  
+class="td11"> 4849</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-2"  
+class="td11">  0.1                    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-2"  
+class="td11"> Exp_FiP16.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-2"  
+class="td11">  Exp_FiP16.h    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-1"  
+class="td11">             </td></tr></table>
+</div>
+<!--l. 69--><p class="noindent" >16 Bit Fixed Point Implementation
+<!--l. 72--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 73-->
+<div class="lstlisting" id="listing-2"><span class="label"><a 
+ id="x1-5002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-5003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-5004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-5005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-5006r5"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">EXP_FIP16</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+<!--l. 84--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-6000"></a>Implementation: FiP32</h4>
+<!--l. 84--><p class="noindent" ><HR> <a 
+ id="dx1-6001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-6" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-6-1g"><col 
+id="TBL-6-1"><col 
+id="TBL-6-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-6-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-1-2"  
+class="td11">  FiP32               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-6-2-2"  
+class="td11"> 4850</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-3-2"  
+class="td11">  0.1                    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-6-4-2"  
+class="td11"> Exp_FiP32.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-6-5-2"  
+class="td11">  Exp_FiP32.h    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-6-6-1"  
+class="td11">             </td></tr></table>
+                                                                                
+                                                                                
+</div>
+<!--l. 97--><p class="noindent" >32 Bit Fixed Point Implementation
+<!--l. 100--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 101-->
+<div class="lstlisting" id="listing-3"><span class="label"><a 
+ id="x1-6002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6006r5"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">EXP_FIP32</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+                                                                                
+                                                                                
+ 
+</body></html> 
+
+                                                                                
+                                                                                
+                                                                                
+
+

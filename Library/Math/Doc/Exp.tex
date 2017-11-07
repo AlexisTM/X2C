@@ -1,0 +1,112 @@
+\XtoCBlock{Exp}
+\label{block:Exp}
+\begin{figure}[H]\includegraphics{Exp}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+In & Input u\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Result of exp(u)\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+Computation of the exponential of the input.
+
+% include optional documentation file
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Exp_Info.tex}{\vspace{1ex}}{}
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!4848}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 4848 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Exp\_FiP8.c \tabularnewline
+\textbf{H filename} & Exp\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *In;
+     int8          Out;
+} EXP_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Exp_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!4849}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 4849 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Exp\_FiP16.c \tabularnewline
+\textbf{H filename} & Exp\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *In;
+     int16         Out;
+} EXP_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Exp_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!4850}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 4850 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Exp\_FiP32.c \tabularnewline
+\textbf{H filename} & Exp\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *In;
+     int32         Out;
+} EXP_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Exp_FiP32.tex}{}{}
+\fi

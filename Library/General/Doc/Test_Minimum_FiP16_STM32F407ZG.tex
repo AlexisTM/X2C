@@ -1,0 +1,37 @@
+\XtoCValidation{Minimum FiP16 CPU STM32F407ZG}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & STM32F407ZG \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Minimum.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 214 \tabularnewline \hline
+\textbf{CPU cycles} & 22 & 22 & 22 & 22 & ... & 22 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In1 (DSP)} & -32767 & -32150 & -31531 & -30913 & ... & 32767 \tabularnewline \hline
+\textbf{In2 (DSP)} & 32767 & 32150 & 31531 & 30913 & ... & 32767 \tabularnewline \hline
+\textbf{In1} & -1 & -0.981 & -0.962 & -0.943 & ... & 1 \tabularnewline \hline
+\textbf{In2} & 1 & 0.981 & 0.962 & 0.943 & ... & 1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -1 & -0.981 & -0.962 & -0.943 & ... & 1 \tabularnewline \hline
+\textbf{Exp. Out} & -1 & -0.981 & -0.962 & -0.943 & ... & 1 \tabularnewline \hline
+\textbf{Out (DSP)} & -32767 & -32150 & -31531 & -30913 & ... & 32767 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -32767 & -32150 & -31531 & -30913 & ... & 32767 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$3.0518e-05 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 22 \tabularnewline \hline
+Max CPU cycles & 22 \tabularnewline \hline
+Avg CPU cycles & 22 \tabularnewline \hline
+\end{XtoCtabular}

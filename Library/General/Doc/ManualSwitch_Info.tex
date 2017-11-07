@@ -1,0 +1,12 @@
+Doubleclicking of the \textit{ManualSwitch} block changes the routing of the input signals and doesn't open the \textit{Function Block Parameters} dialog. So if changing the implementation is required, one has to open the dialog via \textit{Mask Parameters} command of the context menu.
+
+\paragraph{Developer note:} To get the double-click feature the callback function of \textit{OpenFnc} in \textit{Block Properties} is manually altered to
+\begin{lstlisting}[language=Matlab]
+if get_param(gcb,'Toggle') == '0'
+    set_param(gcb,'Toggle', '1');
+else                             
+   set_param(gcb,'Toggle', '0'); 
+end                              
+setBlockData(gcs, gcb);          
+initSFunction(gcb); 
+\end{lstlisting}

@@ -1,0 +1,35 @@
+\XtoCValidation{Cos FiP16 CPU PIC32MX170F256}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & PIC32MX170F256 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Math block Cos.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 133 \tabularnewline \hline
+\textbf{CPU cycles} & 36 & 36 & 36 & 36 & ... & 36 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -32767 & -32272 & -31775 & -31279 & ... & 32767 \tabularnewline \hline
+\textbf{In} & -1 & -0.985 & -0.97 & -0.955 & ... & 1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -1 & -0.999 & -0.995 & -0.99 & ... & -1 \tabularnewline \hline
+\textbf{Exp. Out} & -1 & -0.999 & -0.995 & -0.99 & ... & -1 \tabularnewline \hline
+\textbf{Out (DSP)} & -32767 & -32730 & -32618 & -32433 & ... & -32767 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -32767 & -32731 & -32620 & -32434 & ... & -32767 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.2207e-04 ($\pm$4 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 36 \tabularnewline \hline
+Max CPU cycles & 36 \tabularnewline \hline
+Avg CPU cycles & 36 \tabularnewline \hline
+\end{XtoCtabular}

@@ -1,0 +1,191 @@
+%
+% $LastChangedRevision: 810 $
+% 
+% This file is part of X2C. http://www.mechatronic-simulation.org/
+%
+% Copyright (c) 2013, Linz Center of Mechatronics GmbH (LCM) http://www.lcm.at/
+% All rights reserved.
+%
+
+% this style file is called by generalDoc.sty and contains special
+% X2C commands and formatting
+
+%\usepackage[scaled]{uarial}	% use a font similar to arial
+\usepackage{tabularx}
+\usepackage{etoolbox}
+
+
+%\renewcommand{\mo}{X2C}
+\newcommand{\mc}{X2C}
+
+\newcommand{\mcparam}[1]{\moparam{#1}}
+\newcommand{\mcinp}[1]{\moinp{#1}}
+\newcommand{\mcnext}{\monext}
+\newcommand{\mcmenu}[1]{\momenu{#1}}
+\newcommand{\mcpath}[1]
+
+% ------------ X2C LIBRARY -----------------
+\newcommand{\XtoCLibrary}[1]{
+\section*{#1}
+\addcontentsline{toc}{section}{#1}
+}
+\newcommand{\MtoCLibrary}[1]{
+\section*{#1}
+\addcontentsline{toc}{section}{#1}
+}
+% ------------------------------------------
+
+% ------------ X2C BLOCK -------------------
+\newcommand{\XtoCBlock}[1]{
+\vspace{3ex}%
+\section*{Block:  #1}
+\vspace{-1ex}
+\hrule
+\vspace{1em}
+\addcontentsline{toc}{subsection}{#1}
+}
+\newcommand{\MtoCBlock}[1]{
+\vspace{3ex}%
+\section*{Block:  #1}
+\vspace{-1ex}
+\hrule
+\vspace{1em}
+\addcontentsline{toc}{subsection}{#1}
+}
+% ------------------------------------------
+
+% ------------ X2C IMPLEMENTATION ---------
+\newcommand{\XtoCImplementation}[1]{
+\vspace{3ex}%
+\subsection*{Implementation: #1}
+\vspace{-1ex}
+\hrule
+\vspace{1ex}
+%\addcontentsline{toc}{subsubsection}{Implementation #1}
+}
+\newcommand{\MtoCImplementation}[1]{
+\vspace{3ex}%
+\subsection*{Implementation: #1}
+\vspace{-1ex}
+\hrule
+\vspace{1ex}
+%\addcontentsline{toc}{subsubsection}{Implementation #1}
+}
+% ------------------------------------------
+
+% ------------ X2C TABULAR -----------------
+\newenvironment{XtoCtabular}[1]{
+\vspace{1em}
+\begin{tabular}{|>{\raggedright}p{0.3\textwidth-2\tabcolsep}|>{\raggedright}p{0.7\textwidth-2\tabcolsep-3\arrayrulewidth}|}
+\hline 
+\multicolumn{2}{|l|}{\cellcolor[gray]{0.8}\textbf{#1}} \tabularnewline
+\hline }
+{\end{tabular}\\
+\vspace{1ex}}
+\newenvironment{MtoCtabular}[1]{
+\vspace{1em}
+\begin{tabular}{|>{\raggedright}p{0.3\textwidth-2\tabcolsep}|>{\raggedright}p{0.7\textwidth-2\tabcolsep-3\arrayrulewidth}|}
+\hline 
+\multicolumn{2}{|l|}{\cellcolor[gray]{0.8}\textbf{#1}} \tabularnewline
+\hline }
+{\end{tabular}\\
+\vspace{1ex}}
+% ------------------------------------------
+
+% ------------ X2C DATASTRUCT --------------
+\newcommand{\XtoCDataStruct}[1]{
+\vspace{1em}
+\textbf{#1}
+\vspace{1ex}
+\clisting}
+\newcommand{\MtoCDataStruct}[1]{
+\vspace{1em}
+\textbf{#1}
+\vspace{1ex}
+\clisting}
+% ------------------------------------------
+
+% ------------ X2C VARIABLE ----------------
+\newcommand{\XtoCvar}[1]{
+\moparam{#1}
+}
+\newcommand{\MtoCvar}[1]{
+\moparam{#1}
+}
+% ------------------------------------------
+
+% ------------ X2C VALIDATION --------------
+\newcommand{\XtoCValidation}[1]{
+\vspace{3ex}%
+\newpage
+\subsection*{Validation: #1}
+\vspace{-1ex}
+\hrule
+\addcontentsline{toc}{subsubsection}{Validation #1}
+}
+\newcommand{\MtoCValidation}[1]{
+\vspace{3ex}%
+\newpage
+\subsection*{Validation: #1}
+\vspace{-1ex}
+\hrule
+\addcontentsline{toc}{subsubsection}{Validation #1}
+}
+% ------------------------------------------
+
+% ------------ X2C TESTCASE --------------
+\newcommand{\XtoCTestCase}[2]{
+\subsubsection*{Test case: #1 
+\hfill
+\ifnum #2=1
+  \textcolor{green}{OK}
+\else
+  \textcolor{red}{FAILED}
+\fi
+}
+}
+\newcommand{\MtoCTestCase}[2]{
+\subsubsection*{Test case: #1 
+\hfill
+\ifnum #2=1
+  \textcolor{green}{OK}
+\else
+  \textcolor{red}{FAILED}
+\fi
+}
+}
+%------------------------------------------
+
+% ---------- HELPER COMMANDS --------------
+% command to generate subscripts in text environment
+\newcommand{\textsub} [1]{\raisebox{-0.5ex}{\scriptsize{#1}}}
+%------------------------------------------
+
+% ---------- X2C DEMO BOARD  --------------
+\ifdefined\Blinky
+\else
+ \def\Blinky{0}
+\fi
+\ifcase\Blinky 
+	\newcommand{\DemoPath}{<X2C\_ROOT>{\textbackslash\allowbreak}DemoApplication{\textbackslash\allowbreak}Blinky\_TI\_TMS320F28069\_controlSTICK}
+	\newcommand{\DemoName}{TI F28069 Piccolo controlSTICK}
+	\newcommand{\DemoImage}{DemoApplication_Piccolo}
+\or 
+	\newcommand{\DemoPath}{<X2C\_ROOT>{\textbackslash\allowbreak}DemoApplication{\textbackslash\allowbreak}Blinky\_TI\_TM4C123GH6\_LaunchPad}
+	\newcommand{\DemoName}{TI Tiva TM4C123G LaunchPad}
+	\newcommand{\DemoImage}{DemoApplication_Tiva}
+\or 
+	\newcommand{\DemoPath}{<X2C\_ROOT>{\textbackslash\allowbreak}DemoApplication{\textbackslash\allowbreak}Blinky\_Microchip\_dsPIC33Fxxxx\_MicrostickPlus}
+	\newcommand{\DemoName}{Microchip dsPIC33F MicrostickPlus}
+	\newcommand{\DemoImage}{DemoApplication_MicrostickPlus}
+\or 
+	\newcommand{\DemoPath}{<X2C\_ROOT>{\textbackslash\allowbreak}DemoApplication{\textbackslash\allowbreak}Blinky\_ST\_STM32F051R8\_Discovery}
+	\newcommand{\DemoName}{ST STM32F051R8 Discovery}
+	\newcommand{\DemoImage}{DemoApplication_Discovery}
+ \else
+       % default demo application
+	\newcommand{\DemoPath}{<X2C\_ROOT>{\textbackslash\allowbreak}DemoApplication{\textbackslash\allowbreak}Blinky\_TI\_TMS320F28069\_controlSTICK}
+	\newcommand{\DemoName}{TI F28069 Piccolo controlSTICK}
+	\newcommand{\DemoImage}{DemoApplication_Piccolo}
+\fi
+%------------------------------------------

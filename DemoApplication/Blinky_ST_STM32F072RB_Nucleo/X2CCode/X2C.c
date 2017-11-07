@@ -1,0 +1,186 @@
+/* This file is part of X2C. http://www.mechatronic-simulation.org/                                                   */
+
+/* Model: DemoApplication                                                                                             */
+/* Date:  2017-02-27 14:43                                                                                            */
+
+/* X2C-Version: 1105                                                                                                  */
+
+#include "FlashTable.h"
+#include "RamTable.h"
+#include "X2C.h"
+
+/*                                                       Inports                                                      */
+/*--------------------------------------------------------------------------------------------------------------------*/
+TInports Inports;
+
+/*                                                      Outports                                                      */
+/*--------------------------------------------------------------------------------------------------------------------*/
+TOutports Outports;
+
+/**********************************************************************************************************************/
+/**                                              Global Variables Block                                              **/
+/**********************************************************************************************************************/
+CONSTANT_FIP16                TLED_on;
+CONSTANT_FIP16                TLED_off;
+AUTOSWITCH_FIP16              TAutoSwitch;
+CONSTANT_FIP16                TAmplitude;
+GAIN_FIP16                    TGain;
+SIN3GEN_FIP16                 TSin3Gen;
+CONSTANT_FIP16                TFrequency;
+SINGEN_FIP16                  TSinGen;
+AUTOSWITCH_FIP16              TAutoSwitch1;
+SCOPE_MAIN                    TScope;
+
+/* Block function table                                                                                               */
+#define END_BLOCKFUNCTIONS { (uint16)0, (void (*)(void*))0, (void (*)(void*))0, \
+    (uint8 (*)(void*, uint8[]))0, (uint8 (*)(void*, uint8[], uint8))0, (void* (*)(void*, uint16))0 }
+
+const tBlockFunctions blockFunctionTable[] = {
+    FUNCTIONS,
+    END_BLOCKFUNCTIONS
+};
+
+/* Parameter identifier table                                                                                         */
+#define END_PARAMETERTABLE { (uint16)0, (void*)0 }
+
+const tParameterTable parameterIdTable[] = {
+    PARAMETER_TABLE,
+    END_PARAMETERTABLE
+};
+
+/**********************************************************************************************************************/
+/**                                                  Initialization                                                  **/
+/**********************************************************************************************************************/
+void X2C_Init()
+{
+    /******************************************************************************************************************/
+    /**                                          Initialize Block Parameters                                         **/
+    /******************************************************************************************************************/
+
+    /* Block LEDon                                                                                                    */
+    /* Value = 1.0                                                                                                    */
+    TLED_on.K = 32767;
+
+    /* Block LEDoff                                                                                                   */
+    /* Value = 0.0                                                                                                    */
+    TLED_off.K = 0;
+
+    /* Block AutoSwitch                                                                                               */
+    /* Thresh_up = 0.0                                                                                                */
+    /* Thresh_down = 0.0                                                                                              */
+    TAutoSwitch.Thresh_up = 0;
+    TAutoSwitch.Thresh_down = 0;
+    TAutoSwitch.Status = 0;
+
+    /* Block Amplitude                                                                                                */
+    /* Value = 0.5                                                                                                    */
+    TAmplitude.K = 16384;
+
+    /* Block Gain                                                                                                     */
+    /* Gain = 2.0                                                                                                     */
+    TGain.V = 16384;
+    TGain.sfr = 13;
+
+    /* Block Sin3Gen                                                                                                  */
+    /* fmax = 1000.0                                                                                                  */
+    /* Offset = 0.0                                                                                                   */
+    /* ts_fact = 1.0                                                                                                  */
+    TSin3Gen.delta_phi = 6554;
+    TSin3Gen.offset = 0;
+    TSin3Gen.phi = 0;
+
+    /* Block Frequency                                                                                                */
+    /* Value = 0.0080                                                                                                 */
+    TFrequency.K = 262;
+
+    /* Block SinGen                                                                                                   */
+    /* fmax = 1000.0                                                                                                  */
+    /* Offset = 0.0                                                                                                   */
+    /* Phase = 0.0                                                                                                    */
+    /* ts_fact = 1.0                                                                                                  */
+    TSinGen.delta_phi = 6554;
+    TSinGen.phase = 0;
+    TSinGen.offset = 0;
+    TSinGen.phi = 0;
+
+    /* Block AutoSwitch1                                                                                              */
+    /* Thresh_up = 0.5                                                                                                */
+    /* Thresh_down = 0.5                                                                                              */
+    TAutoSwitch1.Thresh_up = 16384;
+    TAutoSwitch1.Thresh_down = 16384;
+    TAutoSwitch1.Status = 0;
+
+
+    /******************************************************************************************************************/
+    /**                                               Link Block Inputs                                              **/
+    /******************************************************************************************************************/
+
+    /* Block LEDon                                                                                                    */
+
+    /* Block LEDoff                                                                                                   */
+
+    /* Block AutoSwitch                                                                                               */
+    TAutoSwitch.In1                  = &TLED_off.Out;
+    TAutoSwitch.Switch               = &TSinGen.u;
+    TAutoSwitch.In3                  = &TLED_on.Out;
+
+    /* Block Amplitude                                                                                                */
+
+    /* Block Gain                                                                                                     */
+    TGain.In                         = &TFrequency.Out;
+
+    /* Block Sin3Gen                                                                                                  */
+    TSin3Gen.A                       = &TAmplitude.Out;
+    TSin3Gen.f                       = &TFrequency.Out;
+
+    /* Block Frequency                                                                                                */
+
+    /* Block SinGen                                                                                                   */
+    TSinGen.A                        = &TAmplitude.Out;
+    TSinGen.f                        = &TAutoSwitch1.Out;
+
+    /* Block AutoSwitch1                                                                                              */
+    TAutoSwitch1.In1                 = &TGain.Out;
+    TAutoSwitch1.Switch              = &(Inports.User_Button);
+    TAutoSwitch1.In3                 = &TFrequency.Out;
+
+    /******************************************************************************************************************/
+    /**                                                 Link Outports                                                **/
+    /******************************************************************************************************************/
+    Outports.pLED_green               = &TAutoSwitch.Out;
+
+    /******************************************************************************************************************/
+    /**                                           Run Block Init Functions                                           **/
+    /******************************************************************************************************************/
+    Constant_FiP16_Init(&TLED_on);
+    Constant_FiP16_Init(&TLED_off);
+    AutoSwitch_FiP16_Init(&TAutoSwitch);
+    Constant_FiP16_Init(&TAmplitude);
+    Gain_FiP16_Init(&TGain);
+    Sin3Gen_FiP16_Init(&TSin3Gen);
+    Constant_FiP16_Init(&TFrequency);
+    SinGen_FiP16_Init(&TSinGen);
+    AutoSwitch_FiP16_Init(&TAutoSwitch1);
+    Scope_Main_Init(&TScope);
+}
+
+/**********************************************************************************************************************/
+/**                                            Run Block Update Functions                                            **/
+/**********************************************************************************************************************/
+void X2C_Update(void)
+{
+    X2C_Update_1();
+
+}
+
+/* X2C_Update for blocks with 1*Ts                                                                                    */
+void X2C_Update_1(void)
+{
+    Gain_FiP16_Update(&TGain);
+    AutoSwitch_FiP16_Update(&TAutoSwitch1);
+    SinGen_FiP16_Update(&TSinGen);
+    AutoSwitch_FiP16_Update(&TAutoSwitch);
+    Sin3Gen_FiP16_Update(&TSin3Gen);
+    Scope_Main_Update(&TScope);
+}
+

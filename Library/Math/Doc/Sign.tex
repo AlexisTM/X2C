@@ -1,0 +1,112 @@
+\XtoCBlock{Sign}
+\label{block:Sign}
+\begin{figure}[H]\includegraphics{Sign}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+In & Input u\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Value corresponding to sign of u\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+Signum function.
+
+% include optional documentation file
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Sign_Info.tex}{\vspace{1ex}}{}
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!4896}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 4896 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Sign\_FiP8.c \tabularnewline
+\textbf{H filename} & Sign\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *In;
+     int8          Out;
+} SIGN_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Sign_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!4897}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 4897 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Sign\_FiP16.c \tabularnewline
+\textbf{H filename} & Sign\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *In;
+     int16         Out;
+} SIGN_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Sign_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!4898}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 4898 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Sign\_FiP32.c \tabularnewline
+\textbf{H filename} & Sign\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *In;
+     int32         Out;
+} SIGN_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Sign_FiP32.tex}{}{}
+\fi

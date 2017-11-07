@@ -1,0 +1,85 @@
+\XtoCValidation{uGain FiP16 CPU dsPIC33EP256MC502}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & dsPIC33EP256MC502 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 129 & 129 & 129 & 129 & ... & 129 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -32767 & -32150 & -31531 & -30913 & ... & 32767 \tabularnewline \hline
+\textbf{In} & -1 & -0.981 & -0.962 & -0.943 & ... & 1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Gain} & \multicolumn{6}{c|}{2.1} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0.1 & -0.06 & -0.021 & 0.019 & ... & 0.1 \tabularnewline \hline
+\textbf{Exp. Out} & -0.1 & -0.06 & -0.021 & 0.019 & ... & 0.1 \tabularnewline \hline
+\textbf{Out (DSP)} & -3274 & -1979 & -679 & 619 & ... & 3273 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -3277 & -1978 & -680 & 618 & ... & 3277 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.2207e-04 ($\pm$4 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 129 \tabularnewline \hline
+Max CPU cycles & 129 \tabularnewline \hline
+Avg CPU cycles & 129 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Parameter test}{1}
+Parameter test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 129 & 129 & 129 & 129 & ... & 129 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & \multicolumn{6}{c|}{13107} \tabularnewline \hline
+\textbf{In} & \multicolumn{6}{c|}{0.4} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Gain} & -3.7 & -3.63 & -3.56 & -3.491 & ... & 3.7 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0.52 & 0.548 & 0.576 & 0.604 & ... & -0.52 \tabularnewline \hline
+\textbf{Exp. Out} & 0.52 & 0.548 & 0.576 & 0.604 & ... & -0.52 \tabularnewline \hline
+\textbf{Out (DSP)} & 17040 & 17954 & 18869 & 19784 & ... & -17041 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 17039 & 17954 & 18869 & 19784 & ... & -17039 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$9.1553e-05 ($\pm$3 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 129 \tabularnewline \hline
+Max CPU cycles & 145 \tabularnewline \hline
+Avg CPU cycles & 135 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 37 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Gain} & -10 & -9.444 & -8.889 & -8.333 & ... & 10 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{V} & -20480 & -19342 & -18204 & -17067 & ... & 20480 \tabularnewline \hline
+\textbf{sfr} & 11 & 11 & 11 & 11 & ... & 11 \tabularnewline \hline
+\textbf{Exp. V} & -20480 & -19342 & -18204 & -17067 & ... & 20480 \tabularnewline \hline
+\textbf{Exp. sfr} & 11 & 11 & 11 & 11 & ... & 11 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

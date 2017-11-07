@@ -1,0 +1,42 @@
+\XtoCValidation{AdaptivePT1 FiP16 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Control block AdaptivePT1.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 105 \tabularnewline \hline
+\textbf{CPU cycles} & 102 & 102 & 102 & 102 & ... & 102 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & 0 & 0 & 0 & ... & -9830 \tabularnewline \hline
+\textbf{fc (DSP)} & 7537 & 7537 & 7537 & 7537 & ... & 7537 \tabularnewline \hline
+\textbf{In} & 0 & 0 & 0 & 0 & ... & -0.3 \tabularnewline \hline
+\textbf{fc} & 0.23 & 0.23 & 0.23 & 0.23 & ... & 0.23 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{V} & \multicolumn{6}{c|}{1.1} \tabularnewline \hline
+\textbf{fmax} & \multicolumn{6}{c|}{1000} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{6}{c|}{1} \tabularnewline \hline
+\textbf{method} & \multicolumn{6}{c|}{zoh} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & 0 & 0 & 0 & ... & -0.329 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & 0 & 0 & 0 & ... & -0.329 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & 0 & 0 & 0 & ... & -10778 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & 0 & 0 & 0 & ... & -10780 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$6.1035e-04 ($\pm$20 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 102 \tabularnewline \hline
+Max CPU cycles & 102 \tabularnewline \hline
+Avg CPU cycles & 102 \tabularnewline \hline
+\end{XtoCtabular}

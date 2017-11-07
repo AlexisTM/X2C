@@ -1,0 +1,11 @@
+Calculation fixed point implementation:
+\begin{eqnarray*}
+	u_k &=& A_k\cdot \sin{(2 f_k\cdot f_{max}\cdot k T_S + \phi_{Phase})} + A_{Offset}
+\end{eqnarray*}
+For sine calculation a lookup table with 256 entries is used. This results in a short computation time but with the downside of reduced accuracy for the FiP32 implementation.
+
+\medskip
+Calculation floating point implementation (parameter \textit{f\_max} is ignored):
+\begin{eqnarray*}
+	u_k &=& A_k\cdot \sin{(2 \pi f_k \cdot k T_S + \phi_{Phase})} + A_{Offset}
+\end{eqnarray*}

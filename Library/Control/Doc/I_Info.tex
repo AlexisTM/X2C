@@ -1,0 +1,10 @@
+Each fixed point implementation uses the next higher integer datatype for the integrational value storage variable.
+
+A rising flank at the \textit{Enable} inport will preload the integrational part with the value present on the \textit{Init} inport.
+\newline
+
+\noindent
+Transfer function (zero-order hold discretization method):
+\begin{eqnarray*}
+	G(z) &=& K_{I}T_{s}\frac{1}{z-1}
+\end{eqnarray*}

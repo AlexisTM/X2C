@@ -1,0 +1,38 @@
+\XtoCValidation{Saturation Float64 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2016-02-23 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Saturation.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 137 \tabularnewline \hline
+\textbf{CPU cycles} & 219 & 219 & ... & 231 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -0 & -0.046 & ... & 0 \tabularnewline \hline
+\textbf{In} & -0 & -0.046 & ... & 0 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{max} & \multicolumn{4}{c|}{0.8} \tabularnewline \hline
+\textbf{min} & \multicolumn{4}{c|}{-0.3} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0 & -0.046 & ... & 0 \tabularnewline \hline
+\textbf{Exp. Out} & -0 & -0.046 & ... & 0 \tabularnewline \hline
+\textbf{Out (DSP)} & -0 & -0.046 & ... & 0 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -0 & -0.046 & ... & 0 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.0842e-19 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 133 \tabularnewline \hline
+Max CPU cycles & 231 \tabularnewline \hline
+Avg CPU cycles & 206 \tabularnewline \hline
+\end{XtoCtabular}

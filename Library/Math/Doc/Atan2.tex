@@ -1,0 +1,177 @@
+\XtoCBlock{Atan2}
+\label{block:Atan2}
+\begin{figure}[H]\includegraphics{Atan2}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+y & \tabularnewline
+\hline
+x & \tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Result of atan2(y/x)\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+Computation of the angle between the inputs x and y.
+
+% include optional documentation file
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Atan2_Info.tex}{\vspace{1ex}}{}
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\textbf{Float32} & 32 Bit Floating Point Implementation\tabularnewline
+\textbf{Float64} & 64 Bit Floating Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!4880}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 4880 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & Atan2\_FiP8.c \tabularnewline
+\textbf{H filename} & Atan2\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *y;
+     int8          *x;
+     int8          Out;
+} ATAN2_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Atan2_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!4881}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 4881 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & Atan2\_FiP16.c \tabularnewline
+\textbf{H filename} & Atan2\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *y;
+     int16         *x;
+     int16         Out;
+} ATAN2_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Atan2_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!4882}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 4882 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & Atan2\_FiP32.c \tabularnewline
+\textbf{H filename} & Atan2\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *y;
+     int32         *x;
+     int32         Out;
+} ATAN2_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Atan2_FiP32.tex}{}{}
+\fi
+\XtoCImplementation{Float32}
+\index{Block ID!4883}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float32 \tabularnewline
+\textbf{ID} & 4883 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Atan2\_Float32.c \tabularnewline
+\textbf{H filename} & Atan2\_Float32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Floating Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float32       *y;
+     float32       *x;
+     float32       Out;
+} ATAN2_FLOAT32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Atan2_Float32.tex}{}{}
+\fi
+\XtoCImplementation{Float64}
+\index{Block ID!4884}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float64 \tabularnewline
+\textbf{ID} & 4884 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & Atan2\_Float64.c \tabularnewline
+\textbf{H filename} & Atan2\_Float64.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+64 Bit Floating Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float64       *y;
+     float64       *x;
+     float64       Out;
+} ATAN2_FLOAT64;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_Atan2_Float64.tex}{}{}
+\fi

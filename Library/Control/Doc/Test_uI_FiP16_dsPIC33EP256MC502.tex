@@ -1,0 +1,60 @@
+\XtoCValidation{uI FiP16 CPU dsPIC33EP256MC502}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & dsPIC33EP256MC502 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Control block uI.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 351 \tabularnewline \hline
+\textbf{CPU cycles} & 23 & 23 & 23 & 52 & ... & 51 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & 0 & 0 & 0 & ... & -8192 \tabularnewline \hline
+\textbf{Init (DSP)} & 3604 & 3604 & 3604 & 3604 & ... & 3604 \tabularnewline \hline
+\textbf{Enable (DSP)} & 0 & 0 & 0 & 127 & ... & 127 \tabularnewline \hline
+\textbf{In} & 0 & 0 & 0 & 0 & ... & -0.25 \tabularnewline \hline
+\textbf{Init} & 0.11 & 0.11 & 0.11 & 0.11 & ... & 0.11 \tabularnewline \hline
+\textbf{Enable} & 0 & 0 & 0 & 1 & ... & 1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Ki} & \multicolumn{6}{c|}{500} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{6}{c|}{1} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & 0 & 0 & 0.11 & ... & -0.779 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & 0 & 0 & 0.11 & ... & -0.78 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & 0 & 0 & 3604 & ... & -25539 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & 0 & 0 & 3604 & ... & -25559 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$7.6294e-04 ($\pm$25 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 23 \tabularnewline \hline
+Max CPU cycles & 52 \tabularnewline \hline
+Avg CPU cycles & 50 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for Control block I.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 37 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Ki} & -11 & -10.389 & -9.778 & -9.167 & ... & 11 \tabularnewline \hline
+\textbf{ts\_fact} & 1 & 2 & 3 & 4 & ... & 37 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{b0} & -36 & -68 & -96 & -120 & ... & 1334 \tabularnewline \hline
+\textbf{sfr} & 15 & 15 & 15 & 15 & ... & 15 \tabularnewline \hline
+\textbf{Exp. b0} & -36 & -68 & -96 & -120 & ... & 1334 \tabularnewline \hline
+\textbf{Exp. sfr} & 15 & 15 & 15 & 15 & ... & 15 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

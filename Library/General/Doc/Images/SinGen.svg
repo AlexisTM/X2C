@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100mm" height="80mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 10000 8000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:blue;stroke-width:150}
+    .fil0 {fill:blue;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M2000 3917c494,-988 989,-1954 1500,-1954 523,0 1028,1010 1533,2020 495,990 990,1980 1467,1980 235,0 476,-243 688,-547 217,-310 404,-684 529,-933l250 -500 33 17 0 84 -217 433c-125,251 -313,627 -534,942 -225,321 -484,579 -749,579 -523,0 -1028,-1011 -1533,-2021 -495,-990 -990,-1979 -1467,-1979 -477,0 -972,989 -1467,1979l-33 -17 0 -83z"/>
+ </g>
+</svg>

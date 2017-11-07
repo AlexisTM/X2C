@@ -1,0 +1,10 @@
+Calculation:
+\begin{eqnarray*}
+	\left[ \begin{array}{c} x_{1,k+1} \\ x_{2,k+1} \end{array} \right] &=& \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} \left[ \begin{array}{c} x_{1,k} \\ x_{2,k} \end{array} \right] + \begin{bmatrix} b_{11} & b_{12} \\ b_{21} & b_{22} \end{bmatrix} \left[ \begin{array}{c} u_{1,k} \\ u_{2,k} \end{array} \right]\\
+\left[ \begin{array}{c} y_{1} \\ y_{2} \end{array} \right] &=& \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \left[ \begin{array}{c} x_{1,k} \\ x_{2,k} \end{array} \right] + \begin{bmatrix} 0 & 0 \\ 0 & 0 \end{bmatrix} \left[ \begin{array}{c} u_{1,k} \\ u_{2,k} \end{array} \right]
+\end{eqnarray*}
+or short
+\begin{eqnarray*}
+	\mathbf{x}_{k+1} &=& \mathbf{A} \mathbf{x}_k + \mathbf{B} \mathbf{u}_k\\
+	\mathbf{y}_k &=& \mathbf{x}_k
+\end{eqnarray*}

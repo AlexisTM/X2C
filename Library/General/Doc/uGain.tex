@@ -1,0 +1,211 @@
+\XtoCBlock{uGain}
+\label{block:uGain}
+\begin{figure}[H]\includegraphics{uGain}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+In & Input\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Amplified input\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Mask Parameters}
+Gain & Gain factor in floating point format\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+Amplification of input by gain factor with output wrapping.
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\textbf{Float32} & 32 Bit Floating Point Implementation\tabularnewline
+\textbf{Float64} & 32 Bit Floating Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!32}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 32 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & uGain\_FiP8.c \tabularnewline
+\textbf{H filename} & uGain\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+V & Gain factor\tabularnewline
+\hline
+sfr & Shift factor for gain value\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *In;
+     int8          Out;
+     int8          V;
+     int8          sfr;
+} UGAIN_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_uGain_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!33}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 33 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & uGain\_FiP16.c \tabularnewline
+\textbf{H filename} & uGain\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+V & Gain factor\tabularnewline
+\hline
+sfr & Shift factor for gain value\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *In;
+     int16         Out;
+     int16         V;
+     int8          sfr;
+} UGAIN_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_uGain_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!34}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 34 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & uGain\_FiP32.c \tabularnewline
+\textbf{H filename} & uGain\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+V & Gain factor\tabularnewline
+\hline
+sfr & Shift factor for gain value\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *In;
+     int32         Out;
+     int32         V;
+     int8          sfr;
+} UGAIN_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_uGain_FiP32.tex}{}{}
+\fi
+\XtoCImplementation{Float32}
+\index{Block ID!35}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float32 \tabularnewline
+\textbf{ID} & 35 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & uGain\_Float32.c \tabularnewline
+\textbf{H filename} & uGain\_Float32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Floating Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+V & Gain factor\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float32       *In;
+     float32       Out;
+     float32       V;
+} UGAIN_FLOAT32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_uGain_Float32.tex}{}{}
+\fi
+\XtoCImplementation{Float64}
+\index{Block ID!36}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float64 \tabularnewline
+\textbf{ID} & 36 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & uGain\_Float64.c \tabularnewline
+\textbf{H filename} & uGain\_Float64.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Floating Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+V & Gain factor\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float64       *In;
+     float64       Out;
+     float64       V;
+} UGAIN_FLOAT64;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_uGain_Float64.tex}{}{}
+\fi

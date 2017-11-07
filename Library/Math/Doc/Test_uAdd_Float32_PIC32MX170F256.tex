@@ -1,0 +1,37 @@
+\XtoCValidation{uAdd Float32 CPU PIC32MX170F256}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & PIC32MX170F256 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Math block uAdd.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 214 \tabularnewline \hline
+\textbf{CPU cycles} & 156 & 156 & ... & 240 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In1 (DSP)} & -2 & -1.962 & ... & 2 \tabularnewline \hline
+\textbf{In2 (DSP)} & 2 & 1.962 & ... & 2 \tabularnewline \hline
+\textbf{In1} & -2 & -1.962 & ... & 2 \tabularnewline \hline
+\textbf{In2} & 2 & 1.962 & ... & 2 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & 0 & ... & -2.283 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & 0 & ... & -2.283 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & 0 & ... & -2.283 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & 0 & ... & -2.283 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$3.7253e-07 ($\pm$800 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 143 \tabularnewline \hline
+Max CPU cycles & 278 \tabularnewline \hline
+Avg CPU cycles & 174 \tabularnewline \hline
+\end{XtoCtabular}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="120mm" height="80mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 12000 8000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:black;stroke-width:150}
+    .str2 {stroke:blue;stroke-width:150}
+    .str0 {stroke:red;stroke-width:150;stroke-dasharray:300.000000 150.000000}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="2500" y1="2900" x2="9000" y2= "2900" />
+  <polyline class="fil0 str1" points="9000,6500 3000,6500 3000,1500 "/>
+  <polyline class="fil0 str2" points="3500,6500 3500,5000 7167,3000 "/>
+  <line class="fil0 str2" x1="9000" y1="3000" x2="7167" y2= "3000" />
+ </g>
+</svg>

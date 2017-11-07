@@ -1,0 +1,70 @@
+\XtoCValidation{PILimit FiP16 CPU STM32F407ZG}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & STM32F407ZG \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Control block PILimit.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 401 \tabularnewline \hline
+\textbf{CPU cycles} & 40 & 40 & 40 & 84 & ... & 66 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & 0 & 0 & 0 & ... & -6554 \tabularnewline \hline
+\textbf{Init (DSP)} & 3604 & 3604 & 3604 & 3604 & ... & 3604 \tabularnewline \hline
+\textbf{max (DSP)} & 26214 & 26214 & 26214 & 26214 & ... & 26214 \tabularnewline \hline
+\textbf{min (DSP)} & -6554 & -6554 & -6554 & -6554 & ... & -6554 \tabularnewline \hline
+\textbf{Enable (DSP)} & 0 & 0 & 0 & 127 & ... & 127 \tabularnewline \hline
+\textbf{In} & 0 & 0 & 0 & 0 & ... & -0.2 \tabularnewline \hline
+\textbf{Init} & 0.11 & 0.11 & 0.11 & 0.11 & ... & 0.11 \tabularnewline \hline
+\textbf{max} & 0.8 & 0.8 & 0.8 & 0.8 & ... & 0.8 \tabularnewline \hline
+\textbf{min} & -0.2 & -0.2 & -0.2 & -0.2 & ... & -0.2 \tabularnewline \hline
+\textbf{Enable} & 0 & 0 & 0 & 1 & ... & 1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Kp} & \multicolumn{6}{c|}{2} \tabularnewline \hline
+\textbf{Ki} & \multicolumn{6}{c|}{500} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{6}{c|}{1} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & 0 & 0 & 0.11 & ... & -0.2 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & 0 & 0 & 0.11 & ... & -0.2 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & 0 & 0 & 3604 & ... & -6554 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & 0 & 0 & 3604 & ... & -6554 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$2.1362e-04 ($\pm$7 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 40 \tabularnewline \hline
+Max CPU cycles & 84 \tabularnewline \hline
+Avg CPU cycles & 71 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for Control block PILimit.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 37 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Kp} & -10 & -9.444 & -8.889 & -8.333 & ... & 10 \tabularnewline \hline
+\textbf{Ki} & -11 & -10.389 & -9.778 & -9.167 & ... & 11 \tabularnewline \hline
+\textbf{ts\_fact} & 1 & 2 & 3 & 4 & ... & 37 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{b0} & -36 & -68 & -96 & -120 & ... & 1334 \tabularnewline \hline
+\textbf{b1} & -20480 & -19342 & -18204 & -17067 & ... & 20480 \tabularnewline \hline
+\textbf{sfrb0} & 15 & 15 & 15 & 15 & ... & 15 \tabularnewline \hline
+\textbf{sfrb1} & 11 & 11 & 11 & 11 & ... & 11 \tabularnewline \hline
+\textbf{Exp. b0} & -36 & -68 & -96 & -120 & ... & 1334 \tabularnewline \hline
+\textbf{Exp. b1} & -20480 & -19342 & -18204 & -17067 & ... & 20480 \tabularnewline \hline
+\textbf{Exp. sfrb0} & 15 & 15 & 15 & 15 & ... & 15 \tabularnewline \hline
+\textbf{Exp. sfrb1} & 11 & 11 & 11 & 11 & ... & 11 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

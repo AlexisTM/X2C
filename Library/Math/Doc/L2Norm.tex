@@ -1,0 +1,177 @@
+\XtoCBlock{L2Norm}
+\label{block:L2Norm}
+\begin{figure}[H]\includegraphics{L2Norm}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+u1 & Input u1\tabularnewline
+\hline
+u2 & Input u2\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Euclidean norm of u1 and u2\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+Calculation of L2-norm (euclidean norm).
+
+% include optional documentation file
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/L2Norm_Info.tex}{\vspace{1ex}}{}
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\textbf{Float32} & 32 Bit Floating Point Implementation\tabularnewline
+\textbf{Float64} & 64 Bit Floating Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!5056}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 5056 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & L2Norm\_FiP8.c \tabularnewline
+\textbf{H filename} & L2Norm\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *u1;
+     int8          *u2;
+     int8          Out;
+} L2NORM_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_L2Norm_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!5057}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 5057 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & L2Norm\_FiP16.c \tabularnewline
+\textbf{H filename} & L2Norm\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *u1;
+     int16         *u2;
+     int16         Out;
+} L2NORM_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_L2Norm_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!5058}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 5058 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & L2Norm\_FiP32.c \tabularnewline
+\textbf{H filename} & L2Norm\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *u1;
+     int32         *u2;
+     int32         Out;
+} L2NORM_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_L2Norm_FiP32.tex}{}{}
+\fi
+\XtoCImplementation{Float32}
+\index{Block ID!5059}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float32 \tabularnewline
+\textbf{ID} & 5059 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & L2Norm\_Float32.c \tabularnewline
+\textbf{H filename} & L2Norm\_Float32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Floating Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float32       *u1;
+     float32       *u2;
+     float32       Out;
+} L2NORM_FLOAT32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_L2Norm_Float32.tex}{}{}
+\fi
+\XtoCImplementation{Float64}
+\index{Block ID!5060}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float64 \tabularnewline
+\textbf{ID} & 5060 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & L2Norm\_Float64.c \tabularnewline
+\textbf{H filename} & L2Norm\_Float64.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+64 Bit Floating Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float64       *u1;
+     float32       *u2;
+     float64       Out;
+} L2NORM_FLOAT64;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Math/Doc/Test_L2Norm_Float64.tex}{}{}
+\fi

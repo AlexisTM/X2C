@@ -1,0 +1,51 @@
+\XtoCValidation{Sin3Gen FiP16 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Sin3Gen.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 200 \tabularnewline \hline
+\textbf{CPU cycles} & 205 & 205 & 205 & 205 & ... & 205 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{A (DSP)} & 164 & 328 & 492 & 655 & ... & 32767 \tabularnewline \hline
+\textbf{f (DSP)} & 32767 & 32767 & 32767 & 32767 & ... & 32767 \tabularnewline \hline
+\textbf{A} & 0.005 & 0.01 & 0.015 & 0.02 & ... & 1 \tabularnewline \hline
+\textbf{f} & 1 & 1 & 1 & 1 & ... & 1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{fmax} & \multicolumn{6}{c|}{200} \tabularnewline \hline
+\textbf{Offset} & \multicolumn{6}{c|}{0.13} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{6}{c|}{1} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{u} & 0.131 & 0.133 & 0.136 & 0.14 & ... & 0.135 \tabularnewline \hline
+\textbf{v} & 0.125 & 0.12 & 0.115 & 0.11 & ... & -0.739 \tabularnewline \hline
+\textbf{w} & 0.134 & 0.137 & 0.139 & 0.14 & ... & 0.993 \tabularnewline \hline
+\textbf{Exp. u} & 0.131 & 0.132 & 0.136 & 0.14 & ... & 0.13 \tabularnewline \hline
+\textbf{Exp. v} & 0.125 & 0.12 & 0.115 & 0.11 & ... & -0.736 \tabularnewline \hline
+\textbf{Exp. w} & 0.134 & 0.137 & 0.139 & 0.14 & ... & 0.996 \tabularnewline \hline
+\textbf{u (DSP)} & 4281 & 4342 & 4441 & 4576 & ... & 4435 \tabularnewline \hline
+\textbf{v (DSP)} & 4109 & 3944 & 3773 & 3605 & ... & -24204 \tabularnewline \hline
+\textbf{w (DSP)} & 4391 & 4494 & 4566 & 4599 & ... & 32545 \tabularnewline \hline
+\textbf{Exp. u (DSP)} & 4280 & 4341 & 4441 & 4576 & ... & 4260 \tabularnewline \hline
+\textbf{Exp. v (DSP)} & 4109 & 3944 & 3774 & 3605 & ... & -24118 \tabularnewline \hline
+\textbf{Exp. w (DSP)} & 4390 & 4494 & 4565 & 4599 & ... & 32638 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance u & $\pm$5.3711e-03 ($\pm$176 LSB) \tabularnewline \hline
+Tolerance v & $\pm$5.3711e-03 ($\pm$176 LSB) \tabularnewline \hline
+Tolerance w & $\pm$5.3711e-03 ($\pm$176 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 199 \tabularnewline \hline
+Max CPU cycles & 205 \tabularnewline \hline
+Avg CPU cycles & 204 \tabularnewline \hline
+\end{XtoCtabular}

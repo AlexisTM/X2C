@@ -1,0 +1,51 @@
+\XtoCValidation{Selector Float32 CPU dsPIC33EP256MC502}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & dsPIC33EP256MC502 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Selector.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 16 \tabularnewline \hline
+\textbf{CPU cycles} & 24 & 24 & ... & 24 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In0 (DSP)} & 0.1 & -0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{In1 (DSP)} & 0.2 & -0.2 & ... & -0.2 \tabularnewline \hline
+\textbf{In2 (DSP)} & 0.3 & -0.3 & ... & -0.3 \tabularnewline \hline
+\textbf{In3 (DSP)} & 0.4 & -0.4 & ... & -0.4 \tabularnewline \hline
+\textbf{In4 (DSP)} & 0.5 & -0.5 & ... & -0.5 \tabularnewline \hline
+\textbf{In5 (DSP)} & 0.6 & -0.6 & ... & -0.6 \tabularnewline \hline
+\textbf{In6 (DSP)} & 0.7 & -0.7 & ... & -0.7 \tabularnewline \hline
+\textbf{In7 (DSP)} & 0.8 & -0.8 & ... & -0.8 \tabularnewline \hline
+\textbf{Select (DSP)} & 0 & 0 & ... & 7 \tabularnewline \hline
+\textbf{In0} & 0.1 & -0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{In1} & 0.2 & -0.2 & ... & -0.2 \tabularnewline \hline
+\textbf{In2} & 0.3 & -0.3 & ... & -0.3 \tabularnewline \hline
+\textbf{In3} & 0.4 & -0.4 & ... & -0.4 \tabularnewline \hline
+\textbf{In4} & 0.5 & -0.5 & ... & -0.5 \tabularnewline \hline
+\textbf{In5} & 0.6 & -0.6 & ... & -0.6 \tabularnewline \hline
+\textbf{In6} & 0.7 & -0.7 & ... & -0.7 \tabularnewline \hline
+\textbf{In7} & 0.8 & -0.8 & ... & -0.8 \tabularnewline \hline
+\textbf{Select} & 0 & 0 & ... & 0.055 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0.1 & -0.1 & ... & -0.8 \tabularnewline \hline
+\textbf{Exp. Out} & 0.1 & -0.1 & ... & -0.8 \tabularnewline \hline
+\textbf{Out (DSP)} & 0.1 & -0.1 & ... & -0.8 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0.1 & -0.1 & ... & -0.8 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$3.2596e-08 ($\pm$70 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 24 \tabularnewline \hline
+Max CPU cycles & 24 \tabularnewline \hline
+Avg CPU cycles & 24 \tabularnewline \hline
+\end{XtoCtabular}

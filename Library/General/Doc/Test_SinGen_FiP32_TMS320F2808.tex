@@ -1,0 +1,42 @@
+\XtoCValidation{SinGen FiP32 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block SinGen.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 200 \tabularnewline \hline
+\textbf{CPU cycles} & 201 & 201 & ... & 201 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{A (DSP)} & 10737418 & 21474836 & ... & 2147483647 \tabularnewline \hline
+\textbf{f (DSP)} & 2147483647 & 2147483647 & ... & 2147483647 \tabularnewline \hline
+\textbf{A} & 0.005 & 0.01 & ... & 1 \tabularnewline \hline
+\textbf{f} & 1 & 1 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{fmax} & \multicolumn{4}{c|}{200} \tabularnewline \hline
+\textbf{Offset} & \multicolumn{4}{c|}{0.13} \tabularnewline \hline
+\textbf{Phase} & \multicolumn{4}{c|}{0} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{4}{c|}{1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{u} & 0.131 & 0.132 & ... & 0.13 \tabularnewline \hline
+\textbf{Exp. u} & 0.131 & 0.132 & ... & 0.13 \tabularnewline \hline
+\textbf{u (DSP)} & 280518584 & 284513150 & ... & 279172924 \tabularnewline \hline
+\textbf{Exp. u (DSP)} & 280518630 & 284513449 & ... & 279172874 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance u & $\pm$6.9849e-05 ($\pm$150000 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 201 \tabularnewline \hline
+Max CPU cycles & 201 \tabularnewline \hline
+Avg CPU cycles & 201 \tabularnewline \hline
+\end{XtoCtabular}

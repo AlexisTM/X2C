@@ -1,0 +1,80 @@
+\XtoCValidation{Sum FiP32 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Math block Sum.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 74 \tabularnewline \hline
+\textbf{CPU cycles} & 317 & 317 & ... & 317 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In1 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In2 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In3 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In4 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In5 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In6 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In7 (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In8 (DSP)} & -2147483647 & -2088648480 & ... & 2147483647 \tabularnewline \hline
+\textbf{In1} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In2} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In3} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In4} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In5} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In6} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In7} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\textbf{In8} & -1 & -0.973 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{In1} & \multicolumn{4}{c|}{+} \tabularnewline \hline
+\textbf{In2} & \multicolumn{4}{c|}{+} \tabularnewline \hline
+\textbf{In3} & \multicolumn{4}{c|}{+} \tabularnewline \hline
+\textbf{In4} & \multicolumn{4}{c|}{-} \tabularnewline \hline
+\textbf{In5} & \multicolumn{4}{c|}{-} \tabularnewline \hline
+\textbf{In6} & \multicolumn{4}{c|}{-} \tabularnewline \hline
+\textbf{In7} & \multicolumn{4}{c|}{0} \tabularnewline \hline
+\textbf{In8} & \multicolumn{4}{c|}{+} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -1 & -0.973 & ... & 1 \tabularnewline \hline
+\textbf{Exp. Out} & -1 & -0.973 & ... & 1 \tabularnewline \hline
+\textbf{Out (DSP)} & -2147483647 & -2088648480 & ... & 2147483647 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -2147483647 & -2088648480 & ... & 2147483647 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 317 \tabularnewline \hline
+Max CPU cycles & 317 \tabularnewline \hline
+Avg CPU cycles & 317 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for Math block Sum.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\multicolumn{4}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 \tabularnewline \hline
+\multicolumn{4}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{In1} & + & - & 0 \tabularnewline \hline
+\textbf{In2} & + & - & 0 \tabularnewline \hline
+\textbf{In3} & + & - & 0 \tabularnewline \hline
+\textbf{In4} & + & - & 0 \tabularnewline \hline
+\textbf{In5} & + & - & 0 \tabularnewline \hline
+\textbf{In6} & + & - & 0 \tabularnewline \hline
+\textbf{In7} & + & - & 0 \tabularnewline \hline
+\textbf{In8} & + & - & 0 \tabularnewline \hline
+\multicolumn{4}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{sign} & 21845 & 43690 & 0 \tabularnewline \hline
+\textbf{Exp. sign} & 21845 & 43690 & 0 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

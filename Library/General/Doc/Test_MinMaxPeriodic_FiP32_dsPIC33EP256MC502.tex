@@ -1,0 +1,42 @@
+\XtoCValidation{MinMaxPeriodic FiP32 CPU dsPIC33EP256MC502}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & dsPIC33EP256MC502 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block MinMaxPeriodic.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 112 \tabularnewline \hline
+\textbf{CPU cycles} & 103 & 95 & ... & 102 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & -298325298 & ... & 0 \tabularnewline \hline
+\textbf{phi (DSP)} & -2147483647 & -2028179001 & ... & -2147483647 \tabularnewline \hline
+\textbf{In} & -0 & -0.139 & ... & 0 \tabularnewline \hline
+\textbf{phi} & -1 & -0.944 & ... & -1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{max} & 0 & 0 & ... & 0.9 \tabularnewline \hline
+\textbf{min} & 0 & 0 & ... & 0.1 \tabularnewline \hline
+\textbf{Exp. max} & 0 & 0 & ... & 0.9 \tabularnewline \hline
+\textbf{Exp. min} & 0 & 0 & ... & 0.1 \tabularnewline \hline
+\textbf{max (DSP)} & 0 & 0 & ... & 1932735283 \tabularnewline \hline
+\textbf{min (DSP)} & 0 & 0 & ... & 214748365 \tabularnewline \hline
+\textbf{Exp. max (DSP)} & 0 & 0 & ... & 1932735283 \tabularnewline \hline
+\textbf{Exp. min (DSP)} & 0 & 0 & ... & 214748365 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance max & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+Tolerance min & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 93 \tabularnewline \hline
+Max CPU cycles & 103 \tabularnewline \hline
+Avg CPU cycles & 94 \tabularnewline \hline
+\end{XtoCtabular}

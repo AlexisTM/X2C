@@ -1,0 +1,85 @@
+\XtoCValidation{uGain FiP32 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 30 & 30 & ... & 30 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -2147483647 & -2106965089 & ... & 2147483647 \tabularnewline \hline
+\textbf{In} & -1 & -0.981 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Gain} & \multicolumn{4}{c|}{2.1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0.1 & -0.06 & ... & 0.1 \tabularnewline \hline
+\textbf{Exp. Out} & -0.1 & -0.06 & ... & 0.1 \tabularnewline \hline
+\textbf{Out (DSP)} & -214748362 & -129659391 & ... & 214748361 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -214748365 & -129659390 & ... & 214748365 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$2.3283e-09 ($\pm$5 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 30 \tabularnewline \hline
+Max CPU cycles & 30 \tabularnewline \hline
+Avg CPU cycles & 30 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Parameter test}{1}
+Parameter test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 30 & 30 & ... & 30 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & \multicolumn{4}{c|}{858993459} \tabularnewline \hline
+\textbf{In} & \multicolumn{4}{c|}{0.4} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Gain} & -3.7 & -3.63 & ... & 3.7 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0.52 & 0.548 & ... & -0.52 \tabularnewline \hline
+\textbf{Exp. Out} & 0.52 & 0.548 & ... & -0.52 \tabularnewline \hline
+\textbf{Out (DSP)} & 1116691498 & 1176658965 & ... & -1116691499 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 1116691497 & 1176658965 & ... & -1116691497 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.3970e-09 ($\pm$3 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 30 \tabularnewline \hline
+Max CPU cycles & 30 \tabularnewline \hline
+Avg CPU cycles & 30 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for General block uGain.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 37 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Gain} & -10 & -9.444 & ... & 10 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{V} & -1342177280 & -1267611876 & ... & 1342177280 \tabularnewline \hline
+\textbf{sfr} & 27 & 27 & ... & 27 \tabularnewline \hline
+\textbf{Exp. V} & -1342177280 & -1267611876 & ... & 1342177280 \tabularnewline \hline
+\textbf{Exp. sfr} & 27 & 27 & ... & 27 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

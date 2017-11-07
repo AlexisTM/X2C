@@ -1,0 +1,732 @@
+******************************************************************************
+             TMS320C2000 Linker PC v6.1.6                      
+******************************************************************************
+>> Linked Wed Jul 29 14:30:05 2015
+
+OUTPUT FILE NAME:   <../Blinky.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 003d8f3e
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  FLASH                 003d8000   0001fff6  000012e1  0001ed15  RWIX
+  BEGIN                 003f7ff6   00000002  00000002  00000000  RWIX
+
+PAGE 1:
+  DEV_EMU               00000880   00000105  00000004  00000101  RWIX
+  SYS_PWR_CTL           00000985   00000003  00000003  00000000  RWIX
+  FLASH_REGS            00000a80   00000060  00000008  00000058  RWIX
+  CSM                   00000ae0   00000020  00000010  00000010  RWIX
+  ADC_RESULT            00000b00   00000020  00000010  00000010  RWIX
+  CPU_TIMER0            00000c00   00000008  00000008  00000000  RWIX
+  CPU_TIMER1            00000c08   00000008  00000008  00000000  RWIX
+  CPU_TIMER2            00000c10   00000008  00000008  00000000  RWIX
+  PIE_CTRL              00000ce0   00000020  0000001a  00000006  RWIX
+  PIE_VECT              00000d00   00000100  00000100  00000000  RWIX
+  DMA                   00001000   00000200  000000e0  00000120  RWIX
+  CLA1                  00001400   00000080  00000040  00000040  RWIX
+  USB0                  00004000   00001000  00000454  00000bac  RWIX
+  McBSPA                00005000   00000040  00000024  0000001c  RWIX
+  ECANA                 00006000   00000040  00000034  0000000c  RWIX
+  ECANA_LAM             00006040   00000040  00000040  00000000  RWIX
+  ECANA_MOTS            00006080   00000040  00000040  00000000  RWIX
+  ECANA_MOTO            000060c0   00000040  00000040  00000000  RWIX
+  ECANA_MBOX            00006100   00000100  00000100  00000000  RWIX
+  COMP1                 00006400   00000020  00000014  0000000c  RWIX
+  COMP2                 00006420   00000020  00000014  0000000c  RWIX
+  COMP3                 00006440   00000020  00000014  0000000c  RWIX
+  EPWM1                 00006800   00000040  00000040  00000000  RWIX
+  EPWM2                 00006840   00000040  00000040  00000000  RWIX
+  EPWM3                 00006880   00000040  00000040  00000000  RWIX
+  EPWM4                 000068c0   00000040  00000040  00000000  RWIX
+  EPWM5                 00006900   00000040  00000040  00000000  RWIX
+  EPWM6                 00006940   00000040  00000040  00000000  RWIX
+  EPWM7                 00006980   00000040  00000040  00000000  RWIX
+  EPWM8                 000069c0   00000040  00000040  00000000  RWIX
+  ECAP1                 00006a00   00000020  00000020  00000000  RWIX
+  ECAP2                 00006a20   00000020  00000020  00000000  RWIX
+  ECAP3                 00006a40   00000020  00000020  00000000  RWIX
+  HRCAP1                00006ac0   00000020  0000001f  00000001  RWIX
+  HRCAP2                00006ae0   00000020  0000001f  00000001  RWIX
+  EQEP1                 00006b00   00000040  00000022  0000001e  RWIX
+  EQEP2                 00006b40   00000040  00000022  0000001e  RWIX
+  HRCAP3                00006c80   00000020  0000001f  00000001  RWIX
+  HRCAP4                00006ca0   00000020  0000001f  00000001  RWIX
+  GPIOCTRL              00006f80   00000040  00000040  00000000  RWIX
+  GPIODAT               00006fc0   00000020  00000020  00000000  RWIX
+  GPIOINT               00006fe0   00000020  00000020  00000000  RWIX
+  SYSTEM                00007010   00000030  00000030  00000000  RWIX
+  SPIA                  00007040   00000010  00000010  00000000  RWIX
+  SCIA                  00007050   00000010  00000010  00000000  RWIX
+  NMIINTRUPT            00007060   00000010  00000010  00000000  RWIX
+  XINTRUPT              00007070   00000010  00000010  00000000  RWIX
+  ADC                   00007100   00000080  00000050  00000030  RWIX
+  SPIB                  00007740   00000010  00000010  00000000  RWIX
+  SCIB                  00007750   00000010  00000010  00000000  RWIX
+  I2CA                  00007900   00000040  00000022  0000001e  RWIX
+  RAM                   00008000   0000c000  00002359  00009ca7  RWIX
+  PARTID                003d7e80   00000001  00000001  00000000  RWIX
+  CSM_PWL               003f7ff8   00000008  00000008  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.reset     1    00008000    00000002     DSECT
+                  00008000    00000002     rts2800_fpu32.lib : boot.obj (.reset)
+
+.text      0    003d8000    0000110c     
+                  003d8000    0000047f     Scope_Main.obj (.text)
+                  003d847f    00000262     Services.obj (.text)
+                  003d86e1    0000024a     LNet.obj (.text)
+                  003d892b    0000018f     Hardware.obj (.text)
+                  003d8aba    00000120     BlockServicesX2C.obj (.text)
+                  003d8bda    000000f3     C28xx_General_FPU.lib : Sin3Gen_FiP16.obj (.text)
+                  003d8ccd    000000a4     Main.obj (.text)
+                  003d8d71    00000087     C28xx_General_FPU.lib : SinGen_FiP16.obj (.text)
+                  003d8df8    00000075     X2C.obj (.text)
+                  003d8e6d    00000072     CommonFcts.obj (.text)
+                  003d8edf    0000005f     C28xx_General_FPU.lib : AutoSwitch_FiP16.obj (.text)
+                  003d8f3e    00000046     rts2800_fpu32.lib : boot.obj (.text)
+                  003d8f84    00000044     TableStruct.obj (.text)
+                  003d8fc8    00000043     Hardware.obj (.text:retain)
+                  003d900b    0000002a     rts2800_fpu32.lib : fd_cmp.obj (.text)
+                  003d9035    00000028     SerialGeneric.obj (.text)
+                  003d905d    00000021     C28xx_General_FPU.lib : Constant_FiP16.obj (.text)
+                  003d907e    00000021     rts2800_fpu32.lib : memcpy_ff.obj (.text)
+                  003d909f    0000001e                       : ll_cmp.obj (.text)
+                  003d90bd    00000019                       : args_main.obj (.text)
+                  003d90d6    00000019                       : exit.obj (.text)
+                  003d90ef    0000000b                       : u_div.obj (.text)
+                  003d90fa    00000009                       : _lock.obj (.text)
+                  003d9103    00000009                       : fd_neg.obj (.text)
+
+.econst    0    003d910c    00000196     
+                  003d910c    00000101     Sin_Data.obj (.econst:_Sin_Table16)
+                  003d920d    00000001     --HOLE-- [fill = 0]
+                  003d920e    00000048     X2C.obj (.econst:_blockFunctionTable)
+                  003d9256    00000034     X2C.obj (.econst:_parameterIdTable)
+                  003d928a    00000013     Main.obj (.econst)
+                  003d929d    00000001     --HOLE-- [fill = 0]
+                  003d929e    00000004     CommonFcts.obj (.econst)
+
+ramfuncs   0    003d92a2    0000001f     RUN ADDR = 0000a33a
+                  003d92a2    0000001f     Hardware.obj (ramfuncs)
+
+.cinit     0    003d92c1    00000020     
+                  003d92c1    0000000a     rts2800_fpu32.lib : _lock.obj (.cinit)
+                  003d92cb    0000000a                       : exit.obj (.cinit)
+                  003d92d5    00000005     LNet.obj (.cinit)
+                  003d92da    00000005     Main.obj (.cinit)
+                  003d92df    00000002     --HOLE-- [fill = 0]
+
+.begin     0    003f7ff6    00000002     
+                  003f7ff6    00000002     Boot.obj (.begin)
+
+DevEmuRegsFile 
+*          1    00000880    00000004     UNINITIALIZED
+                  00000880    00000004     F2806x_GlobalVariableDefs.obj (DevEmuRegsFile)
+
+SysPwrCtrlRegsFile 
+*          1    00000985    00000003     UNINITIALIZED
+                  00000985    00000003     F2806x_GlobalVariableDefs.obj (SysPwrCtrlRegsFile)
+
+FlashRegsFile 
+*          1    00000a80    00000008     UNINITIALIZED
+                  00000a80    00000008     F2806x_GlobalVariableDefs.obj (FlashRegsFile)
+
+CsmRegsFile 
+*          1    00000ae0    00000010     UNINITIALIZED
+                  00000ae0    00000010     F2806x_GlobalVariableDefs.obj (CsmRegsFile)
+
+AdcResultFile 
+*          1    00000b00    00000010     UNINITIALIZED
+                  00000b00    00000010     F2806x_GlobalVariableDefs.obj (AdcResultFile)
+
+CpuTimer0RegsFile 
+*          1    00000c00    00000008     UNINITIALIZED
+                  00000c00    00000008     F2806x_GlobalVariableDefs.obj (CpuTimer0RegsFile)
+
+CpuTimer1RegsFile 
+*          1    00000c08    00000008     UNINITIALIZED
+                  00000c08    00000008     F2806x_GlobalVariableDefs.obj (CpuTimer1RegsFile)
+
+CpuTimer2RegsFile 
+*          1    00000c10    00000008     UNINITIALIZED
+                  00000c10    00000008     F2806x_GlobalVariableDefs.obj (CpuTimer2RegsFile)
+
+PieCtrlRegsFile 
+*          1    00000ce0    0000001a     UNINITIALIZED
+                  00000ce0    0000001a     F2806x_GlobalVariableDefs.obj (PieCtrlRegsFile)
+
+PieVectTableFile 
+*          1    00000d00    00000100     UNINITIALIZED
+                  00000d00    00000100     F2806x_GlobalVariableDefs.obj (PieVectTableFile)
+
+EmuKeyVar 
+*          1    00000d00    00000001     UNINITIALIZED
+                  00000d00    00000001     F2806x_GlobalVariableDefs.obj (EmuKeyVar)
+
+EmuBModeVar 
+*          1    00000d01    00000001     UNINITIALIZED
+                  00000d01    00000001     F2806x_GlobalVariableDefs.obj (EmuBModeVar)
+
+FlashCallbackVar 
+*          1    00000d02    00000002     UNINITIALIZED
+                  00000d02    00000002     F2806x_GlobalVariableDefs.obj (FlashCallbackVar)
+
+FlashScalingVar 
+*          1    00000d04    00000002     UNINITIALIZED
+                  00000d04    00000002     F2806x_GlobalVariableDefs.obj (FlashScalingVar)
+
+DmaRegsFile 
+*          1    00001000    000000e0     UNINITIALIZED
+                  00001000    000000e0     F2806x_GlobalVariableDefs.obj (DmaRegsFile)
+
+Cla1RegsFile 
+*          1    00001400    00000040     UNINITIALIZED
+                  00001400    00000040     F2806x_GlobalVariableDefs.obj (Cla1RegsFile)
+
+Usb0RegsFile 
+*          1    00004000    00000454     UNINITIALIZED
+                  00004000    00000454     F2806x_GlobalVariableDefs.obj (Usb0RegsFile)
+
+McbspaRegsFile 
+*          1    00005000    00000024     UNINITIALIZED
+                  00005000    00000024     F2806x_GlobalVariableDefs.obj (McbspaRegsFile)
+
+ECanaRegsFile 
+*          1    00006000    00000034     UNINITIALIZED
+                  00006000    00000034     F2806x_GlobalVariableDefs.obj (ECanaRegsFile)
+
+ECanaLAMRegsFile 
+*          1    00006040    00000040     UNINITIALIZED
+                  00006040    00000040     F2806x_GlobalVariableDefs.obj (ECanaLAMRegsFile)
+
+ECanaMOTSRegsFile 
+*          1    00006080    00000040     UNINITIALIZED
+                  00006080    00000040     F2806x_GlobalVariableDefs.obj (ECanaMOTSRegsFile)
+
+ECanaMOTORegsFile 
+*          1    000060c0    00000040     UNINITIALIZED
+                  000060c0    00000040     F2806x_GlobalVariableDefs.obj (ECanaMOTORegsFile)
+
+ECanaMboxesFile 
+*          1    00006100    00000100     UNINITIALIZED
+                  00006100    00000100     F2806x_GlobalVariableDefs.obj (ECanaMboxesFile)
+
+Comp1RegsFile 
+*          1    00006400    00000014     UNINITIALIZED
+                  00006400    00000014     F2806x_GlobalVariableDefs.obj (Comp1RegsFile)
+
+Comp2RegsFile 
+*          1    00006420    00000014     UNINITIALIZED
+                  00006420    00000014     F2806x_GlobalVariableDefs.obj (Comp2RegsFile)
+
+Comp3RegsFile 
+*          1    00006440    00000014     UNINITIALIZED
+                  00006440    00000014     F2806x_GlobalVariableDefs.obj (Comp3RegsFile)
+
+EPwm1RegsFile 
+*          1    00006800    00000040     UNINITIALIZED
+                  00006800    00000040     F2806x_GlobalVariableDefs.obj (EPwm1RegsFile)
+
+EPwm2RegsFile 
+*          1    00006840    00000040     UNINITIALIZED
+                  00006840    00000040     F2806x_GlobalVariableDefs.obj (EPwm2RegsFile)
+
+EPwm3RegsFile 
+*          1    00006880    00000040     UNINITIALIZED
+                  00006880    00000040     F2806x_GlobalVariableDefs.obj (EPwm3RegsFile)
+
+EPwm4RegsFile 
+*          1    000068c0    00000040     UNINITIALIZED
+                  000068c0    00000040     F2806x_GlobalVariableDefs.obj (EPwm4RegsFile)
+
+EPwm5RegsFile 
+*          1    00006900    00000040     UNINITIALIZED
+                  00006900    00000040     F2806x_GlobalVariableDefs.obj (EPwm5RegsFile)
+
+EPwm6RegsFile 
+*          1    00006940    00000040     UNINITIALIZED
+                  00006940    00000040     F2806x_GlobalVariableDefs.obj (EPwm6RegsFile)
+
+EPwm7RegsFile 
+*          1    00006980    00000040     UNINITIALIZED
+                  00006980    00000040     F2806x_GlobalVariableDefs.obj (EPwm7RegsFile)
+
+EPwm8RegsFile 
+*          1    000069c0    00000040     UNINITIALIZED
+                  000069c0    00000040     F2806x_GlobalVariableDefs.obj (EPwm8RegsFile)
+
+ECap1RegsFile 
+*          1    00006a00    00000020     UNINITIALIZED
+                  00006a00    00000020     F2806x_GlobalVariableDefs.obj (ECap1RegsFile)
+
+ECap2RegsFile 
+*          1    00006a20    00000020     UNINITIALIZED
+                  00006a20    00000020     F2806x_GlobalVariableDefs.obj (ECap2RegsFile)
+
+ECap3RegsFile 
+*          1    00006a40    00000020     UNINITIALIZED
+                  00006a40    00000020     F2806x_GlobalVariableDefs.obj (ECap3RegsFile)
+
+HRCap1RegsFile 
+*          1    00006ac0    0000001f     UNINITIALIZED
+                  00006ac0    0000001f     F2806x_GlobalVariableDefs.obj (HRCap1RegsFile)
+
+HRCap2RegsFile 
+*          1    00006ae0    0000001f     UNINITIALIZED
+                  00006ae0    0000001f     F2806x_GlobalVariableDefs.obj (HRCap2RegsFile)
+
+EQep1RegsFile 
+*          1    00006b00    00000022     UNINITIALIZED
+                  00006b00    00000022     F2806x_GlobalVariableDefs.obj (EQep1RegsFile)
+
+EQep2RegsFile 
+*          1    00006b40    00000022     UNINITIALIZED
+                  00006b40    00000022     F2806x_GlobalVariableDefs.obj (EQep2RegsFile)
+
+HRCap3RegsFile 
+*          1    00006c80    0000001f     UNINITIALIZED
+                  00006c80    0000001f     F2806x_GlobalVariableDefs.obj (HRCap3RegsFile)
+
+HRCap4RegsFile 
+*          1    00006ca0    0000001f     UNINITIALIZED
+                  00006ca0    0000001f     F2806x_GlobalVariableDefs.obj (HRCap4RegsFile)
+
+GpioCtrlRegsFile 
+*          1    00006f80    00000040     UNINITIALIZED
+                  00006f80    00000040     F2806x_GlobalVariableDefs.obj (GpioCtrlRegsFile)
+
+GpioDataRegsFile 
+*          1    00006fc0    00000020     UNINITIALIZED
+                  00006fc0    00000020     F2806x_GlobalVariableDefs.obj (GpioDataRegsFile)
+
+GpioIntRegsFile 
+*          1    00006fe0    00000020     UNINITIALIZED
+                  00006fe0    00000020     F2806x_GlobalVariableDefs.obj (GpioIntRegsFile)
+
+SysCtrlRegsFile 
+*          1    00007010    00000030     UNINITIALIZED
+                  00007010    00000030     F2806x_GlobalVariableDefs.obj (SysCtrlRegsFile)
+
+SpiaRegsFile 
+*          1    00007040    00000010     UNINITIALIZED
+                  00007040    00000010     F2806x_GlobalVariableDefs.obj (SpiaRegsFile)
+
+SciaRegsFile 
+*          1    00007050    00000010     UNINITIALIZED
+                  00007050    00000010     F2806x_GlobalVariableDefs.obj (SciaRegsFile)
+
+NmiIntruptRegsFile 
+*          1    00007060    00000010     UNINITIALIZED
+                  00007060    00000010     F2806x_GlobalVariableDefs.obj (NmiIntruptRegsFile)
+
+XIntruptRegsFile 
+*          1    00007070    00000010     UNINITIALIZED
+                  00007070    00000010     F2806x_GlobalVariableDefs.obj (XIntruptRegsFile)
+
+AdcRegsFile 
+*          1    00007100    00000050     UNINITIALIZED
+                  00007100    00000050     F2806x_GlobalVariableDefs.obj (AdcRegsFile)
+
+SpibRegsFile 
+*          1    00007740    00000010     UNINITIALIZED
+                  00007740    00000010     F2806x_GlobalVariableDefs.obj (SpibRegsFile)
+
+ScibRegsFile 
+*          1    00007750    00000010     UNINITIALIZED
+                  00007750    00000010     F2806x_GlobalVariableDefs.obj (ScibRegsFile)
+
+I2caRegsFile 
+*          1    00007900    00000022     UNINITIALIZED
+                  00007900    00000022     F2806x_GlobalVariableDefs.obj (I2caRegsFile)
+
+.ebss      1    00008000    0000213a     UNINITIALIZED
+                  00008000    00001f40     Scope_Main.obj (.ebss)
+                  00009f40    0000013f     Main.obj (.ebss)
+                  0000a07f    00000001     --HOLE--
+                  0000a080    00000078     X2C.obj (.ebss)
+                  0000a0f8    00000004     LNet.obj (.ebss)
+                  0000a0fc    00000004     rts2800_fpu32.lib : _lock.obj (.ebss)
+                  0000a100    00000036     Services.obj (.ebss)
+                  0000a136    00000004     rts2800_fpu32.lib : exit.obj (.ebss)
+
+.bss       1    00008000    00000000     UNINITIALIZED
+
+.stack     1    0000a13a    00000200     UNINITIALIZED
+                  0000a13a    00000200     --HOLE--
+
+PartIdRegsFile 
+*          1    003d7e80    00000001     UNINITIALIZED
+                  003d7e80    00000001     F2806x_GlobalVariableDefs.obj (PartIdRegsFile)
+
+CsmPwlFile 
+*          1    003f7ff8    00000008     UNINITIALIZED
+                  003f7ff8    00000008     F2806x_GlobalVariableDefs.obj (CsmPwlFile)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00008000   .bss
+003d8000   .text
+003d90d6   C$$EXIT
+003d900b   FD$$CMP
+003d9103   FD$$NEG
+003d909f   LL$$CMP
+003d90ef   U$$DIV
+003d90f4   U$$MOD
+003d90b1   ULL$$CMP
+003d8fd7   _ADCIsr
+00007100   _AdcRegs
+00000b00   _AdcResult
+003d8f2a   _AutoSwitch_FiP16_GetAddress
+003d8f21   _AutoSwitch_FiP16_Init
+003d8f0d   _AutoSwitch_FiP16_Load
+003d8efb   _AutoSwitch_FiP16_Save
+003d8edf   _AutoSwitch_FiP16_Update
+00001400   _Cla1Regs
+003d8edd   _Common_GetAddress
+003d8edc   _Common_Init
+003d8eda   _Common_Load
+003d8ed4   _Common_Save
+003d8ed3   _Common_Update
+00006400   _Comp1Regs
+00006420   _Comp2Regs
+00006440   _Comp3Regs
+003d9078   _Constant_FiP16_GetAddress
+003d9073   _Constant_FiP16_Init
+003d906a   _Constant_FiP16_Load
+003d905d   _Constant_FiP16_Save
+00000c00   _CpuTimer0Regs
+00000c08   _CpuTimer1Regs
+00000c10   _CpuTimer2Regs
+003f7ff8   _CsmPwl
+00000ae0   _CsmRegs
+00000880   _DevEmuRegs
+00001000   _DmaRegs
+00006040   _ECanaLAMRegs
+000060c0   _ECanaMOTORegs
+00006080   _ECanaMOTSRegs
+00006100   _ECanaMboxes
+00006000   _ECanaRegs
+00006a00   _ECap1Regs
+00006a20   _ECap2Regs
+00006a40   _ECap3Regs
+00006800   _EPwm1Regs
+00006840   _EPwm2Regs
+00006880   _EPwm3Regs
+000068c0   _EPwm4Regs
+00006900   _EPwm5Regs
+00006940   _EPwm6Regs
+00006980   _EPwm7Regs
+000069c0   _EPwm8Regs
+00006b00   _EQep1Regs
+00006b40   _EQep2Regs
+00000d01   _EmuBMode
+00000d00   _EmuKey
+00000a80   _FlashRegs
+00000d04   _Flash_CPUScaleFactor
+00000d02   _Flash_CallbackPtr
+00006f80   _GpioCtrlRegs
+00006fc0   _GpioDataRegs
+00006fe0   _GpioIntRegs
+00006ac0   _HRCap1Regs
+00006ae0   _HRCap2Regs
+00006c80   _HRCap3Regs
+00006ca0   _HRCap4Regs
+00007900   _I2caRegs
+0000a08e   _Inports
+00005000   _McbspaRegs
+00007060   _NmiIntruptRegs
+0000a080   _Outports
+003d7e80   _PartIdRegs
+00000ce0   _PieCtrlRegs
+00000d00   _PieVectTable
+003d92c1   _RamfuncsLoadEnd
+003d92a2   _RamfuncsLoadStart
+0000a33a   _RamfuncsRunStart
+00007050   _SciaRegs
+00007750   _ScibRegs
+00008000   _ScopeArray
+003d842b   _Scope_Main_Init
+003d8396   _Scope_Main_Load
+003d81d7   _Scope_Main_Save
+003d8042   _Scope_Main_Update
+003d8cb0   _Sin3Gen_FiP16_GetAddress
+003d8ca5   _Sin3Gen_FiP16_Init
+003d8c91   _Sin3Gen_FiP16_Load
+003d8c7f   _Sin3Gen_FiP16_Save
+003d8bda   _Sin3Gen_FiP16_Update
+003d8dea   _SinGen_FiP16_GetAddress
+003d8de4   _SinGen_FiP16_Init
+003d8dc9   _SinGen_FiP16_Load
+003d8db3   _SinGen_FiP16_Save
+003d8d71   _SinGen_FiP16_Update
+003d910c   _Sin_Table16
+00007040   _SpiaRegs
+00007740   _SpibRegs
+00007010   _SysCtrlRegs
+00000985   _SysPwrCtrlRegs
+0000a08b   _TAmplitude
+0000a0aa   _TAutoSwitch
+0000a082   _TFrequency
+0000a085   _TLED_off
+0000a088   _TLED_on
+0000a0c0   _TScope
+0000a092   _TSin3Gen
+0000a09e   _TSinGen
+00009f40   _TableStruct
+00009f60   _TheTableStruct
+003d8fc8   _UnusedIsr
+00004000   _Usb0Regs
+003d8e09   _X2C_Init
+003d8df8   _X2C_Update
+003d8df8   _X2C_Update_1
+00007070   _XIntruptRegs
+0000a33a   __STACK_END
+00000200   __STACK_SIZE
+00000001   __TI_args_main
+ffffffff   ___binit__
+00008000   ___bss__
+ffffffff   ___c_args__
+003d92c1   ___cinit__
+00008000   ___end__
+003d910c   ___etext__
+003d907e   ___memcpy_ff
+ffffffff   ___pinit__
+003d8000   ___text__
+003d90bd   __args_main
+0000a136   __cleanup_ptr
+0000a138   __dtors_ptr
+0000a0fe   __lock
+003d9102   __nop
+003d90fe   __register_lock
+003d90fa   __register_unlock
+0000a13a   __stack
+0000a0fc   __unlock
+003d90d6   _abort
+003d8bc9   _addBlockServices
+003d86c9   _addCoreServices
+003d8faf   _addTableStructProtocol
+003d920e   _blockFunctionTable
+003d8f3e   _c_int00
+003d928a   _compilationDate
+003d90d8   _exit
+003d8ec9   _getAbsValI16
+003d8eba   _getAbsValI32
+003d8e9b   _getAbsValI64
+003d8e93   _getAbsValI8
+003d8e8c   _getAbsValR32
+003d8e6d   _getAbsValR64
+003d8b35   _getBlockData
+003d8aba   _getRAMBlock
+0000a33a   _initFlash
+003d8a1a   _initHardware
+003d8983   _initInterruptVector
+003d86e1   _initLNet
+003d894a   _initSerial
+003d903f   _initSerialGeneric
+003d86bc   _initServiceTable
+003d8f84   _initTableStruct
+003d9038   _linkSerial
+003d8d01   _main
+003d8ccd   _mainTask
+003d9256   _parameterIdTable
+003d8b7b   _putBlockData
+003d862e   _sendError
+003d849c   _sendSvNotAvailable
+ffffffff   binit
+003d92c1   cinit
+00008000   end
+003d910c   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000200   __STACK_SIZE
+00000880   _DevEmuRegs
+00000985   _SysPwrCtrlRegs
+00000a80   _FlashRegs
+00000ae0   _CsmRegs
+00000b00   _AdcResult
+00000c00   _CpuTimer0Regs
+00000c08   _CpuTimer1Regs
+00000c10   _CpuTimer2Regs
+00000ce0   _PieCtrlRegs
+00000d00   _EmuKey
+00000d00   _PieVectTable
+00000d01   _EmuBMode
+00000d02   _Flash_CallbackPtr
+00000d04   _Flash_CPUScaleFactor
+00001000   _DmaRegs
+00001400   _Cla1Regs
+00004000   _Usb0Regs
+00005000   _McbspaRegs
+00006000   _ECanaRegs
+00006040   _ECanaLAMRegs
+00006080   _ECanaMOTSRegs
+000060c0   _ECanaMOTORegs
+00006100   _ECanaMboxes
+00006400   _Comp1Regs
+00006420   _Comp2Regs
+00006440   _Comp3Regs
+00006800   _EPwm1Regs
+00006840   _EPwm2Regs
+00006880   _EPwm3Regs
+000068c0   _EPwm4Regs
+00006900   _EPwm5Regs
+00006940   _EPwm6Regs
+00006980   _EPwm7Regs
+000069c0   _EPwm8Regs
+00006a00   _ECap1Regs
+00006a20   _ECap2Regs
+00006a40   _ECap3Regs
+00006ac0   _HRCap1Regs
+00006ae0   _HRCap2Regs
+00006b00   _EQep1Regs
+00006b40   _EQep2Regs
+00006c80   _HRCap3Regs
+00006ca0   _HRCap4Regs
+00006f80   _GpioCtrlRegs
+00006fc0   _GpioDataRegs
+00006fe0   _GpioIntRegs
+00007010   _SysCtrlRegs
+00007040   _SpiaRegs
+00007050   _SciaRegs
+00007060   _NmiIntruptRegs
+00007070   _XIntruptRegs
+00007100   _AdcRegs
+00007740   _SpibRegs
+00007750   _ScibRegs
+00007900   _I2caRegs
+00008000   .bss
+00008000   _ScopeArray
+00008000   ___bss__
+00008000   ___end__
+00008000   end
+00009f40   _TableStruct
+00009f60   _TheTableStruct
+0000a080   _Outports
+0000a082   _TFrequency
+0000a085   _TLED_off
+0000a088   _TLED_on
+0000a08b   _TAmplitude
+0000a08e   _Inports
+0000a092   _TSin3Gen
+0000a09e   _TSinGen
+0000a0aa   _TAutoSwitch
+0000a0c0   _TScope
+0000a0fc   __unlock
+0000a0fe   __lock
+0000a136   __cleanup_ptr
+0000a138   __dtors_ptr
+0000a13a   __stack
+0000a33a   _RamfuncsRunStart
+0000a33a   __STACK_END
+0000a33a   _initFlash
+003d7e80   _PartIdRegs
+003d8000   .text
+003d8000   ___text__
+003d8042   _Scope_Main_Update
+003d81d7   _Scope_Main_Save
+003d8396   _Scope_Main_Load
+003d842b   _Scope_Main_Init
+003d849c   _sendSvNotAvailable
+003d862e   _sendError
+003d86bc   _initServiceTable
+003d86c9   _addCoreServices
+003d86e1   _initLNet
+003d894a   _initSerial
+003d8983   _initInterruptVector
+003d8a1a   _initHardware
+003d8aba   _getRAMBlock
+003d8b35   _getBlockData
+003d8b7b   _putBlockData
+003d8bc9   _addBlockServices
+003d8bda   _Sin3Gen_FiP16_Update
+003d8c7f   _Sin3Gen_FiP16_Save
+003d8c91   _Sin3Gen_FiP16_Load
+003d8ca5   _Sin3Gen_FiP16_Init
+003d8cb0   _Sin3Gen_FiP16_GetAddress
+003d8ccd   _mainTask
+003d8d01   _main
+003d8d71   _SinGen_FiP16_Update
+003d8db3   _SinGen_FiP16_Save
+003d8dc9   _SinGen_FiP16_Load
+003d8de4   _SinGen_FiP16_Init
+003d8dea   _SinGen_FiP16_GetAddress
+003d8df8   _X2C_Update
+003d8df8   _X2C_Update_1
+003d8e09   _X2C_Init
+003d8e6d   _getAbsValR64
+003d8e8c   _getAbsValR32
+003d8e93   _getAbsValI8
+003d8e9b   _getAbsValI64
+003d8eba   _getAbsValI32
+003d8ec9   _getAbsValI16
+003d8ed3   _Common_Update
+003d8ed4   _Common_Save
+003d8eda   _Common_Load
+003d8edc   _Common_Init
+003d8edd   _Common_GetAddress
+003d8edf   _AutoSwitch_FiP16_Update
+003d8efb   _AutoSwitch_FiP16_Save
+003d8f0d   _AutoSwitch_FiP16_Load
+003d8f21   _AutoSwitch_FiP16_Init
+003d8f2a   _AutoSwitch_FiP16_GetAddress
+003d8f3e   _c_int00
+003d8f84   _initTableStruct
+003d8faf   _addTableStructProtocol
+003d8fc8   _UnusedIsr
+003d8fd7   _ADCIsr
+003d900b   FD$$CMP
+003d9038   _linkSerial
+003d903f   _initSerialGeneric
+003d905d   _Constant_FiP16_Save
+003d906a   _Constant_FiP16_Load
+003d9073   _Constant_FiP16_Init
+003d9078   _Constant_FiP16_GetAddress
+003d907e   ___memcpy_ff
+003d909f   LL$$CMP
+003d90b1   ULL$$CMP
+003d90bd   __args_main
+003d90d6   C$$EXIT
+003d90d6   _abort
+003d90d8   _exit
+003d90ef   U$$DIV
+003d90f4   U$$MOD
+003d90fa   __register_unlock
+003d90fe   __register_lock
+003d9102   __nop
+003d9103   FD$$NEG
+003d910c   _Sin_Table16
+003d910c   ___etext__
+003d910c   etext
+003d920e   _blockFunctionTable
+003d9256   _parameterIdTable
+003d928a   _compilationDate
+003d92a2   _RamfuncsLoadStart
+003d92c1   _RamfuncsLoadEnd
+003d92c1   ___cinit__
+003d92c1   cinit
+003f7ff8   _CsmPwl
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[173 symbols]

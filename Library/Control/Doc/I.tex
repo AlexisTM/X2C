@@ -1,0 +1,266 @@
+\XtoCBlock{I}
+\label{block:I}
+\begin{figure}[H]\includegraphics{I}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+In & Control error input\tabularnewline
+\hline
+Init & Value which is loaded at initialization function call\tabularnewline
+\hline
+Enable & Enable == 0: Deactivation of block; Out set to 0
+
+Enable 0->1: Preload of integral part
+
+Enable == 1: Activation of block\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Control value\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Mask Parameters}
+Ki & Integral Factor\tabularnewline
+\hline
+ts\_fact & Multiplication factor of base sampling time (in integer format)\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+I controller:
+
+    G(s) = Ki/s = 1/(Ti*s)
+
+% include optional documentation file
+\InputIfFileExists{\XcHomePath/Library/Control/Doc/I_Info.tex}{\vspace{1ex}}{}
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\textbf{Float32} & 32 Bit Floating Point Implementation\tabularnewline
+\textbf{Float64} & 64 Bit Floating Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!3200}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 3200 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & I\_FiP8.c \tabularnewline
+\textbf{H filename} & I\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+b0 & Integral coefficient\tabularnewline
+\hline
+sfr & Shift factor for I coefficient b0\tabularnewline
+\hline
+i\_old & Integrator value from previous cycle\tabularnewline
+\hline
+enable\_old & Enable value of previous cycle\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *In;
+     int8          *Init;
+     int8          *Enable;
+     int8          Out;
+     int8          b0;
+     int8          sfr;
+     int16         i_old;
+     int8          enable_old;
+} I_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Control/Doc/Test_I_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!3201}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 3201 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & I\_FiP16.c \tabularnewline
+\textbf{H filename} & I\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+b0 & Integral coefficient\tabularnewline
+\hline
+sfr & Shift factor for I coefficient b0\tabularnewline
+\hline
+i\_old & Integrator value from previous cycle\tabularnewline
+\hline
+enable\_old & Enable value of previous cycle\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *In;
+     int16         *Init;
+     int8          *Enable;
+     int16         Out;
+     int16         b0;
+     int8          sfr;
+     int32         i_old;
+     int8          enable_old;
+} I_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Control/Doc/Test_I_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!3202}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 3202 \tabularnewline
+\textbf{Revision} & 1.0 \tabularnewline
+\textbf{C filename} & I\_FiP32.c \tabularnewline
+\textbf{H filename} & I\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+b0 & Integral coefficient\tabularnewline
+\hline
+sfr & Shift factor for I coefficient b0\tabularnewline
+\hline
+i\_old & Integrator value from previous cycle\tabularnewline
+\hline
+enable\_old & Enable value of previous cycle\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *In;
+     int32         *Init;
+     int8          *Enable;
+     int32         Out;
+     int32         b0;
+     int8          sfr;
+     int64         i_old;
+     int8          enable_old;
+} I_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Control/Doc/Test_I_FiP32.tex}{}{}
+\fi
+\XtoCImplementation{Float32}
+\index{Block ID!3203}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float32 \tabularnewline
+\textbf{ID} & 3203 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & I\_Float32.c \tabularnewline
+\textbf{H filename} & I\_Float32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Floating Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+b0 & Integral coefficient\tabularnewline
+\hline
+i\_old & Integrator value from previous cycle\tabularnewline
+\hline
+enable\_old & Enable value of previous cycle\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float32       *In;
+     float32       *Init;
+     int8          *Enable;
+     float32       Out;
+     float32       b0;
+     float32       i_old;
+     int8          enable_old;
+} I_FLOAT32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Control/Doc/Test_I_Float32.tex}{}{}
+\fi
+\XtoCImplementation{Float64}
+\index{Block ID!3204}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float64 \tabularnewline
+\textbf{ID} & 3204 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & I\_Float64.c \tabularnewline
+\textbf{H filename} & I\_Float64.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+64 Bit Floating Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+b0 & Integral coefficient\tabularnewline
+\hline
+i\_old & Integrator value from previous cycle\tabularnewline
+\hline
+enable\_old & Enable value of previous cycle\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float64       *In;
+     float64       *Init;
+     int8          *Enable;
+     float64       Out;
+     float64       b0;
+     float64       i_old;
+     int8          enable_old;
+} I_FLOAT64;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/Control/Doc/Test_I_Float64.tex}{}{}
+\fi

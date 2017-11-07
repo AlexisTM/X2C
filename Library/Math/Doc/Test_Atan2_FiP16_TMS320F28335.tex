@@ -1,0 +1,37 @@
+\XtoCValidation{Atan2 FiP16 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{0}
+Inport test for Math block Atan2.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 105 \tabularnewline \hline
+\textbf{CPU cycles} & 43 & 83 & 91 & 180 & ... & 91 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{y (DSP)} & 0 & 32767 & -32767 & 0 & ... & -32767 \tabularnewline \hline
+\textbf{x (DSP)} & 0 & 0 & 0 & 32767 & ... & -9830 \tabularnewline \hline
+\textbf{y} & 0 & 1 & -1 & 0 & ... & -1 \tabularnewline \hline
+\textbf{x} & 0 & 0 & 0 & 1 & ... & -0.3 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 &  \textcolor{red}{ \textbf{0.25}} &  \textcolor{red}{ \textbf{-0.75}} & 0 & ... &  \textcolor{red}{ \textbf{-0.75}} \tabularnewline \hline
+\textbf{Exp. Out} & 0 & 0.5 & -0.5 & 0 & ... & -0.593 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 &  \textcolor{red}{ \textbf{8191}} &  \textcolor{red}{ \textbf{-24577}} & 0 & ... & \textcolor{red}{ \textbf{-24577}} \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & 16384 & -16384 & 0 & ... & -19424 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$7.6294e-04 ($\pm$25 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 43 \tabularnewline \hline
+Max CPU cycles & 188 \tabularnewline \hline
+Avg CPU cycles & 125 \tabularnewline \hline
+\end{XtoCtabular}

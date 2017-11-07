@@ -1,0 +1,78 @@
+\XtoCValidation{AutoSwitch Float64 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2016-02-23 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block AutoSwitch.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 137 \tabularnewline \hline
+\textbf{CPU cycles} & 136 & 136 & ... & 136 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In1 (DSP)} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Switch (DSP)} & 0.916 & 0.859 & ... & 0.44 \tabularnewline \hline
+\textbf{In3 (DSP)} & 1 & 0.986 & ... & -0.986 \tabularnewline \hline
+\textbf{In1} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Switch} & 0.916 & 0.859 & ... & 0.44 \tabularnewline \hline
+\textbf{In3} & 1 & 0.986 & ... & -0.986 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Thresh\_up} & \multicolumn{4}{c|}{0.3} \tabularnewline \hline
+\textbf{Thresh\_down} & \multicolumn{4}{c|}{-0.1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Exp. Out} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Out (DSP)} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.0842e-19 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 136 \tabularnewline \hline
+Max CPU cycles & 233 \tabularnewline \hline
+Avg CPU cycles & 183 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block AutoSwitch.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 137 \tabularnewline \hline
+\textbf{CPU cycles} & 136 & 136 & ... & 136 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In1 (DSP)} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Switch (DSP)} & 0.916 & 0.859 & ... & 0.44 \tabularnewline \hline
+\textbf{In3 (DSP)} & 1 & 0.986 & ... & -0.986 \tabularnewline \hline
+\textbf{In1} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Switch} & 0.916 & 0.859 & ... & 0.44 \tabularnewline \hline
+\textbf{In3} & 1 & 0.986 & ... & -0.986 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Thresh\_up} & \multicolumn{4}{c|}{0} \tabularnewline \hline
+\textbf{Thresh\_down} & \multicolumn{4}{c|}{0} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Exp. Out} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Out (DSP)} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -1 & -0.986 & ... & 0.986 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.0842e-19 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 136 \tabularnewline \hline
+Max CPU cycles & 229 \tabularnewline \hline
+Avg CPU cycles & 177 \tabularnewline \hline
+\end{XtoCtabular}

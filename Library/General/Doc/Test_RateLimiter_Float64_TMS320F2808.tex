@@ -1,0 +1,43 @@
+\XtoCValidation{RateLimiter Float64 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2016-02-23 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block RateLimiter.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 213 \tabularnewline \hline
+\textbf{CPU cycles} & 62 & 62 & ... & 867 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & -1 & ... & -0.8 \tabularnewline \hline
+\textbf{Init (DSP)} & 0 & 0.3 & ... & 0.3 \tabularnewline \hline
+\textbf{Enable (DSP)} & 0 & 0 & ... & 127 \tabularnewline \hline
+\textbf{In} & 0 & -1 & ... & -0.8 \tabularnewline \hline
+\textbf{Init} & 0 & 0.3 & ... & 0.3 \tabularnewline \hline
+\textbf{Enable} & 0 & 0 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Tr} & \multicolumn{4}{c|}{0.01} \tabularnewline \hline
+\textbf{Tf} & \multicolumn{4}{c|}{0.03} \tabularnewline \hline
+\textbf{ts\_fact} & \multicolumn{4}{c|}{1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & -1 & ... & 0.423 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & -1 & ... & 0.423 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & -1 & ... & 0.423 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & -1 & ... & 0.423 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$0.0000e+00 ($\pm$0 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 62 \tabularnewline \hline
+Max CPU cycles & 878 \tabularnewline \hline
+Avg CPU cycles & 558 \tabularnewline \hline
+\end{XtoCtabular}

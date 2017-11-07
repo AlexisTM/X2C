@@ -1,0 +1,51 @@
+\XtoCValidation{Selector FiP32 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Selector.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 16 \tabularnewline \hline
+\textbf{CPU cycles} & 41 & 41 & ... & 41 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In0 (DSP)} & 214748365 & -214748365 & ... & -214748365 \tabularnewline \hline
+\textbf{In1 (DSP)} & 429496730 & -429496730 & ... & -429496730 \tabularnewline \hline
+\textbf{In2 (DSP)} & 644245094 & -644245094 & ... & -644245094 \tabularnewline \hline
+\textbf{In3 (DSP)} & 858993459 & -858993459 & ... & -858993459 \tabularnewline \hline
+\textbf{In4 (DSP)} & 1073741824 & -1073741824 & ... & -1073741824 \tabularnewline \hline
+\textbf{In5 (DSP)} & 1288490189 & -1288490189 & ... & -1288490189 \tabularnewline \hline
+\textbf{In6 (DSP)} & 1503238554 & -1503238554 & ... & -1503238554 \tabularnewline \hline
+\textbf{In7 (DSP)} & 1717986918 & -1717986918 & ... & -1717986918 \tabularnewline \hline
+\textbf{Select (DSP)} & 0 & 0 & ... & 7 \tabularnewline \hline
+\textbf{In0} & 0.1 & -0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{In1} & 0.2 & -0.2 & ... & -0.2 \tabularnewline \hline
+\textbf{In2} & 0.3 & -0.3 & ... & -0.3 \tabularnewline \hline
+\textbf{In3} & 0.4 & -0.4 & ... & -0.4 \tabularnewline \hline
+\textbf{In4} & 0.5 & -0.5 & ... & -0.5 \tabularnewline \hline
+\textbf{In5} & 0.6 & -0.6 & ... & -0.6 \tabularnewline \hline
+\textbf{In6} & 0.7 & -0.7 & ... & -0.7 \tabularnewline \hline
+\textbf{In7} & 0.8 & -0.8 & ... & -0.8 \tabularnewline \hline
+\textbf{Select} & 0 & 0 & ... & 0.055 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0.1 & -0.1 & ... & -0.8 \tabularnewline \hline
+\textbf{Exp. Out} & 0.1 & -0.1 & ... & -0.8 \tabularnewline \hline
+\textbf{Out (DSP)} & 214748365 & -214748365 & ... & -1717986918 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 214748365 & -214748365 & ... & -1717986918 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 41 \tabularnewline \hline
+Max CPU cycles & 41 \tabularnewline \hline
+Avg CPU cycles & 41 \tabularnewline \hline
+\end{XtoCtabular}

@@ -1,0 +1,37 @@
+\XtoCValidation{L2Norm FiP32 CPU STM32F407ZG}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & STM32F407ZG \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Math block L2Norm.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 94 \tabularnewline \hline
+\textbf{CPU cycles} & 64 & 64 & ... & 64 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{u1 (DSP)} & 0 & 2147483647 & ... & 1717986918 \tabularnewline \hline
+\textbf{u2 (DSP)} & 0 & 0 & ... & 429496730 \tabularnewline \hline
+\textbf{u1} & 0 & 1 & ... & 0.8 \tabularnewline \hline
+\textbf{u2} & 0 & 0 & ... & 0.2 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 0 & 1 & ... & 0.825 \tabularnewline \hline
+\textbf{Exp. Out} & 0 & 1 & ... & 0.825 \tabularnewline \hline
+\textbf{Out (DSP)} & 0 & 2147483645 & ... & 1770859265 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 0 & 2147483647 & ... & 1770860382 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$1.8626e-03 ($\pm$4000000 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 62 \tabularnewline \hline
+Max CPU cycles & 70 \tabularnewline \hline
+Avg CPU cycles & 63 \tabularnewline \hline
+\end{XtoCtabular}

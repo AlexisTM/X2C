@@ -1,0 +1,35 @@
+\XtoCValidation{Abs FiP32 CPU dsPIC33EP256MC502}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & dsPIC33EP256MC502 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Math block Abs.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 107 \tabularnewline \hline
+\textbf{CPU cycles} & 51 & 51 & ... & 46 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -2147483647 & -2147483647 & ... & 2147483647 \tabularnewline \hline
+\textbf{In} & -1 & -1 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 1 & 1 & ... & 1 \tabularnewline \hline
+\textbf{Exp. Out} & 1 & 1 & ... & 1 \tabularnewline \hline
+\textbf{Out (DSP)} & 2147483647 & 2147483647 & ... & 2147483647 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 2147483647 & 2147483647 & ... & 2147483647 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 46 \tabularnewline \hline
+Max CPU cycles & 51 \tabularnewline \hline
+Avg CPU cycles & 47 \tabularnewline \hline
+\end{XtoCtabular}

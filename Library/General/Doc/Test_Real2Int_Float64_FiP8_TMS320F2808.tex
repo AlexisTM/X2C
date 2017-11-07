@@ -1,0 +1,83 @@
+\XtoCValidation{Real2Int Float64\_FiP8 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2016-02-23 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block Real2Int.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 113 \tabularnewline \hline
+\textbf{CPU cycles} & 268 & 268 & ... & 274 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -31 & -30.446 & ... & 31 \tabularnewline \hline
+\textbf{In} & -31 & -30.446 & ... & 31 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Scale} & \multicolumn{4}{c|}{73.5} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0.414 & -0.414 & ... & 0.414 \tabularnewline \hline
+\textbf{Exp. Out} & -0.422 & -0.414 & ... & 0.422 \tabularnewline \hline
+\textbf{Out (DSP)} & -53 & -53 & ... & 53 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -54 & -53 & ... & 54 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$7.8125e-03 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 174 \tabularnewline \hline
+Max CPU cycles & 281 \tabularnewline \hline
+Avg CPU cycles & 271 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Parameter test}{1}
+Parameter test for General block Real2Int.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 14 \tabularnewline \hline
+\textbf{CPU cycles} & 268 & 268 & ... & 274 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & \multicolumn{4}{c|}{0.1} \tabularnewline \hline
+\textbf{In} & \multicolumn{4}{c|}{0.1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{Scale} & -10 & -5 & ... & 10 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0.008 & -0.016 & ... & 0.008 \tabularnewline \hline
+\textbf{Exp. Out} & -0.01 & -0.02 & ... & 0.01 \tabularnewline \hline
+\textbf{Out (DSP)} & -1 & -2 & ... & 1 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -1 & -3 & ... & 1 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$7.8125e-03 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 268 \tabularnewline \hline
+Max CPU cycles & 281 \tabularnewline \hline
+Avg CPU cycles & 273 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for General block Real2Int.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 14 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{Scale} & -10 & -5 & ... & 10 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{scale} & -12.8 & -25.6 & ... & 12.8 \tabularnewline \hline
+\textbf{Exp. scale} & -12.8 & -25.6 & ... & 12.8 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

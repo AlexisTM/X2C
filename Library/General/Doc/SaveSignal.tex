@@ -1,0 +1,160 @@
+\XtoCBlock{SaveSignal}
+\label{block:SaveSignal}
+\begin{figure}[H]\includegraphics{SaveSignal}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+In & Input signal to be saved\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\subsubsection*{Description:}
+Makes the incoming signal accessible for reading with parameter numbers.
+
+% include optional documentation file
+\InputIfFileExists{\XcHomePath/Library/General/Doc/SaveSignal_Info.tex}{\vspace{1ex}}{}
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\textbf{Float32} & 32 Bit Floating Point Implementation\tabularnewline
+\textbf{Float64} & 64 Bit Floating Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!320}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 320 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & SaveSignal\_FiP8.c \tabularnewline
+\textbf{H filename} & SaveSignal\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *In;
+} SAVESIGNAL_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_SaveSignal_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!321}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 321 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & SaveSignal\_FiP16.c \tabularnewline
+\textbf{H filename} & SaveSignal\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *In;
+} SAVESIGNAL_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_SaveSignal_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!322}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 322 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & SaveSignal\_FiP32.c \tabularnewline
+\textbf{H filename} & SaveSignal\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *In;
+} SAVESIGNAL_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_SaveSignal_FiP32.tex}{}{}
+\fi
+\XtoCImplementation{Float32}
+\index{Block ID!323}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float32 \tabularnewline
+\textbf{ID} & 323 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & SaveSignal\_Float32.c \tabularnewline
+\textbf{H filename} & SaveSignal\_Float32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Floating Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float32       *In;
+} SAVESIGNAL_FLOAT32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_SaveSignal_Float32.tex}{}{}
+\fi
+\XtoCImplementation{Float64}
+\index{Block ID!324}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & Float64 \tabularnewline
+\textbf{ID} & 324 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & SaveSignal\_Float64.c \tabularnewline
+\textbf{H filename} & SaveSignal\_Float64.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+64 Bit Floating Point Implementation
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     float64       *In;
+} SAVESIGNAL_FLOAT64;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_SaveSignal_Float64.tex}{}{}
+\fi

@@ -1,0 +1,12 @@
+Each fixed point implementation uses the next higher integer data type for the integral value storage variable.
+
+A rising flank at the \textit{Enable} inport will preload the integral part with the value present on the \textit{Init} inport.
+\newline
+
+\noindent
+Transfer function (zero-order hold discretization method):
+\begin{eqnarray*}
+	G(z) &=&  K_{P} + K_{I}T_{s}\frac{1}{z-1}
+\end{eqnarray*}
+
+\paragraph{Developer note:} For the fixed point implementations the source code of block \nameref{block:PILimit} is used.

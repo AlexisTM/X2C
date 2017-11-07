@@ -1,0 +1,2513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html xml:lang="de" > 
+<head>
+<title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,png --> 
+<meta name="src" content="PID_.tex"> 
+<meta name="date" content="2015-07-06 11:29:00"> 
+<link rel="stylesheet" type="text/css" href="PID_.css"> 
+</head><body 
+>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Block: PID</h3>
+<!--l. 1--><p class="noindent" ><HR> <a 
+ id="Q1-1-2"></a> <a 
+ id="x1-1000doc"></a> <hr class="figure"><div class="figure" 
+>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+<!--l. 3--><p class="noindent" ><img 
+src="PID.png" alt="PIC"  
+>
+                                                                                
+                                                                                
+<!--l. 3--><p class="noindent" ></div><hr class="endfigure">
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1"></colgroup><colgroup id="TBL-1-2g"><col 
+id="TBL-1-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-1-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Inports</span></div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-1-2-1"  
+class="td11">  <!--l. 6--><p class="noindent" >In                                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-1-2-2"  
+class="td11">  <!--l. 6--><p class="noindent" >Control
+    error
+    input                                                                                              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-1-3-1"  
+class="td11">  <!--l. 8--><p class="noindent" >Init                                         </td><td  style="white-space:wrap; text-align:left;" id="TBL-1-3-2"  
+class="td11">  <!--l. 8--><p class="noindent" >Value
+    which
+    is
+    loaded
+    at
+    initialization
+    function
+    call                                                                                                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-1-4-1"  
+class="td11">  <!--l. 10--><p class="noindent" >Enable                                   </td><td  style="white-space:wrap; text-align:left;" id="TBL-1-4-2"  
+class="td11">  <!--l. 10--><p class="noindent" >Enable
+    ==
+    0:
+    Deactivation
+    of
+    block;
+    Out
+    set
+    to
+    0
+    <!--l. 12--><p class="noindent" >Enable
+    0-&#x003E;1:
+    Preload
+    of
+    integral
+    part
+    <!--l. 14--><p class="noindent" >Enable
+    ==
+    1:
+    Activation
+    of
+    block                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-1-5-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"></colgroup><colgroup id="TBL-2-2g"><col 
+id="TBL-2-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Outports</span></div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-1"  
+class="td11">  <!--l. 20--><p class="noindent" >Out                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-2"  
+class="td11">  <!--l. 21--><p class="noindent" >                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-2-3-1"  
+class="td11">                        </td></tr></table>
+</div><br 
+class="newline" />
+                                                                                
+                                                                                
+<div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1"></colgroup><colgroup id="TBL-3-2g"><col 
+id="TBL-3-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-3-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Mask Parameters</span></div></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-1"  
+class="td11"> <!--l. 25--><p class="noindent" >Kp               </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-2"  
+class="td11">  <!--l. 25--><p class="noindent" >Proportional
+    Factor                                                                                            </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-1"  
+class="td11">  <!--l. 27--><p class="noindent" >Ki                                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-3-2"  
+class="td11">  <!--l. 27--><p class="noindent" >Integral
+    Factor                                                                                            </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-4-1"  
+class="td11">  <!--l. 29--><p class="noindent" >Kd                                         </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-4-2"  
+class="td11">  <!--l. 29--><p class="noindent" >Derivative
+    Factor                                                                                            </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-5-1"  
+class="td11">  <!--l. 31--><p class="noindent" >fc                                           </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-5-2"  
+class="td11">  <!--l. 31--><p class="noindent" >Cutoff
+    frequency
+    of
+    realization
+    low
+    pass                                                                                              </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-6-1"  
+class="td11">  <!--l. 33--><p class="noindent" >ts_fact                                   </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-6-2"  
+class="td11">  <!--l. 33--><p class="noindent" >Multiplication
+    factor
+    of
+    base
+    sampling
+    time
+    (in
+    integer
+    format)                                                                                          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-3-7-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-2000"></a>Description:</h5>
+<!--l. 38--><p class="noindent" >PID controller:
+<!--l. 40--><p class="noindent" >G(s) = Kp + Ki/s + Kd*s/(s/(2*pi*fc) + 1)
+<!--l. 1--><p class="noindent" >Each fixed point implementation uses the next higher integer datatype for the integrational
+value storage variable.
+<!--l. 3--><p class="noindent" >A rising flank at the <span 
+class="phvro8t-x-x-108">Enable </span>inport will preload the integrational part with the value present on
+the <span 
+class="phvro8t-x-x-108">Init </span>inport. <br 
+class="newline" />
+<!--l. 6--><p class="noindent" >Transfer function (zero-order hold discretization method): <div class="eqnarray">
+<center class="math-display" >
+<img 
+src="PID_0x.png" alt="                   --1--        --z---1---
+G (z) =   KP + KITsz - 1 + KD &#x03C9;c z- e- &#x03C9;cTs
+" class="math-display" ></center>
+</div>
+                                                                                
+                                                                                
+<!--l. 12--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-3000"></a><span 
+class="phvb8t-x-x-108">FiP8 bug:</span></span>
+When using the TI compiler the step response of the derivative part doesn&#8217;t return to zero,
+but generates an overflow at zero crossing if the derivative parameter value is too
+high.
+<!--l. 13--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x1-4000"></a><span 
+class="phvb8t-x-x-108">Developer note:</span></span>
+For the fixed point implementations the source code of block <span 
+class="phvro8t-x-x-108">PIDLimit </span>is used.
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-5000"></a>Implementations:</h5>
+<div class="tabular"> <table id="TBL-4" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-4-1g"><col 
+id="TBL-4-1"><col 
+id="TBL-4-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-4-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">FiP8        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-1-2"  
+class="td11">  8 Bit Fixed Point Implementation          </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-2-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">FiP16       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-2-2"  
+class="td11">  16 Bit Fixed Point Implementation        </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">FiP32       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-3-2"  
+class="td11">  32 Bit Fixed Point Implementation        </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-4-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Float32    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-4-2"  
+class="td11">  32 Bit Floating Point Implementation    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Float64    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-4-5-2"  
+class="td11">  64 Bit Floating Point Implementation    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-4-6-1"  
+class="td11">          </td></tr></table></div>
+<!--l. 53--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-6000"></a>Implementation: FiP8</h4>
+<!--l. 53--><p class="noindent" ><HR> <a 
+ id="dx1-6001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-5" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-5-1g"><col 
+id="TBL-5-1"><col 
+id="TBL-5-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-5-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-1-2"  
+class="td11">  FiP8               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-5-2-2"  
+class="td11"> 3248</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-3-2"  
+class="td11">  1.0                 </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-5-4-2"  
+class="td11"> PID_FiP8.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-5-5-2"  
+class="td11">  PID_FiP8.h    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-5-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-5-6-1"  
+class="td
+11">             </td></tr></table>
+</div>
+<!--l. 66--><p class="noindent" >8 Bit Fixed Point Implementation
+                                                                                
+                                                                                
+<div class="tabular"> <table id="TBL-6" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-6-1g"><col 
+id="TBL-6-1"></colgroup><colgroup id="TBL-6-2g"><col 
+id="TBL-6-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-6-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Controller Parameters</span></div></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-2-1"  
+class="td11"> <!--l. 69--><p class="noindent" >b0       </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-2-2"  
+class="td11">  <!--l. 69--><p class="noindent" >Integral
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-3-1"  
+class="td11">  <!--l. 71--><p class="noindent" >b1                                          </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-3-2"  
+class="td11">  <!--l. 71--><p class="noindent" >Proportional
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-4-1"  
+class="td11">  <!--l. 73--><p class="noindent" >b0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-4-2"  
+class="td11">  <!--l. 73--><p class="noindent" >Derivational
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-5-1"  
+class="td11">  <!--l. 75--><p class="noindent" >b1d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-5-2"  
+class="td11">  <!--l. 75--><p class="noindent" >Derivational
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-6-1"  
+class="td11">  <!--l. 77--><p class="noindent" >a0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-6-2"  
+class="td11">  <!--l. 77--><p class="noindent" >Derivational
+    coefficient
+    a0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-7-1"  
+class="td11">  <!--l. 79--><p class="noindent" >sfrb0                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-7-2"  
+class="td11">  <!--l. 79--><p class="noindent" >Shift
+    factor
+    for
+    PI
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-8-1"  
+class="td11">  <!--l. 81--><p class="noindent" >sfrb1                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-8-2"  
+class="td11">  <!--l. 81--><p class="noindent" >Shift
+    factor
+    for
+    PI
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-9-1"  
+class="td11">  <!--l. 83--><p class="noindent" >sfrd                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-9-2"  
+class="td11">  <!--l. 83--><p class="noindent" >Shift
+    factor
+    for
+    D
+    coefficients
+    b0d
+    and
+    b1d                                                                                                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-10-1"  
+class="td11">  <!--l. 85--><p class="noindent" >in_old                                    </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-10-2"  
+class="td11">  <!--l. 85--><p class="noindent" >Input
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-11-1"  
+class="td11">  <!--l. 87--><p class="noindent" >i_old                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-11-2"  
+class="td11">  <!--l. 87--><p class="noindent" >Integrator
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-12-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-12-1"  
+class="td11">  <!--l. 89--><p class="noindent" >d_old                                     </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-12-2"  
+class="td11">  <!--l. 89--><p class="noindent" >Derivative
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-13-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-13-1"  
+class="td11">  <!--l. 91--><p class="noindent" >enable_old                            </td><td  style="white-space:wrap; text-align:left;" id="TBL-6-13-2"  
+class="td11">  <!--l. 91--><p class="noindent" >Enable
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-6-14-"><td  style="white-space:wrap; text-align:left;" id="TBL-6-14-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<!--l. 96--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 97-->
+<div class="lstlisting" id="listing-1"><span class="label"><a 
+ id="x1-6002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Init</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6006r5"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Enable</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6007r6"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6008r7"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6009r8"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6010r9"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6011r10"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6012r11"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">a0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6013r12"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrb0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6014r13"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrb1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6015r14"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrd</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6016r15"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">in_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6017r16"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">i_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6018r17"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">d_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6019r18"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">enable_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-6020r19"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">PID_FIP8</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+<!--l. 122--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-7000"></a>Implementation: FiP16</h4>
+<!--l. 122--><p class="noindent" ><HR> <a 
+ id="dx1-7001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-7" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-7-1g"><col 
+id="TBL-7-1"><col 
+id="TBL-7-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-7-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-1-2"  
+class="td11">  FiP16               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-7-2-2"  
+class="td11"> 3249</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-3-2"  
+class="td11">  1.0                   </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-7-4-2"  
+class="td11"> PID_FiP16.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-7-5-2"  
+class="td11">  PID_FiP16.h    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-7-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-7-6-1"  
+class="td
+11">             </td></tr></table>
+</div>
+<!--l. 135--><p class="noindent" >16 Bit Fixed Point Implementation
+                                                                                
+                                                                                
+<div class="tabular"> <table id="TBL-8" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-8-1g"><col 
+id="TBL-8-1"></colgroup><colgroup id="TBL-8-2g"><col 
+id="TBL-8-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-8-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Controller Parameters</span></div></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-2-1"  
+class="td11"> <!--l. 138--><p class="noindent" >b0       </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-2-2"  
+class="td11">  <!--l. 138--><p class="noindent" >Integral
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-3-1"  
+class="td11">  <!--l. 140--><p class="noindent" >b1                                          </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-3-2"  
+class="td11">  <!--l. 140--><p class="noindent" >Proportional
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-4-1"  
+class="td11">  <!--l. 142--><p class="noindent" >b0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-4-2"  
+class="td11">  <!--l. 142--><p class="noindent" >Derivational
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-5-1"  
+class="td11">  <!--l. 144--><p class="noindent" >b1d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-5-2"  
+class="td11">  <!--l. 144--><p class="noindent" >Derivational
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-6-1"  
+class="td11">  <!--l. 146--><p class="noindent" >a0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-6-2"  
+class="td11">  <!--l. 146--><p class="noindent" >Derivational
+    coefficient
+    a0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-7-1"  
+class="td11">  <!--l. 148--><p class="noindent" >sfrb0                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-7-2"  
+class="td11">  <!--l. 148--><p class="noindent" >Shift
+    factor
+    for
+    PI
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-8-1"  
+class="td11">  <!--l. 150--><p class="noindent" >sfrb1                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-8-2"  
+class="td11">  <!--l. 150--><p class="noindent" >Shift
+    factor
+    for
+    PI
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-9-1"  
+class="td11">  <!--l. 152--><p class="noindent" >sfrd                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-9-2"  
+class="td11">  <!--l. 152--><p class="noindent" >Shift
+    factor
+    for
+    D
+    coefficients
+    b0d
+    and
+    b1d                                                                                                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-10-1"  
+class="td11">  <!--l. 154--><p class="noindent" >in_old                                    </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-10-2"  
+class="td11">  <!--l. 154--><p class="noindent" >Input
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-11-1"  
+class="td11">  <!--l. 156--><p class="noindent" >i_old                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-11-2"  
+class="td11">  <!--l. 156--><p class="noindent" >Integrator
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-12-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-12-1"  
+class="td11">  <!--l. 158--><p class="noindent" >d_old                                     </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-12-2"  
+class="td11">  <!--l. 158--><p class="noindent" >Derivative
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-13-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-13-1"  
+class="td11">  <!--l. 160--><p class="noindent" >enable_old                            </td><td  style="white-space:wrap; text-align:left;" id="TBL-8-13-2"  
+class="td11">  <!--l. 160--><p class="noindent" >Enable
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-8-14-"><td  style="white-space:wrap; text-align:left;" id="TBL-8-14-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<!--l. 165--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 166-->
+<div class="lstlisting" id="listing-2"><span class="label"><a 
+ id="x1-7002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Init</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7006r5"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Enable</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7007r6"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7008r7"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7009r8"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7010r9"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7011r10"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7012r11"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">a0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7013r12"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrb0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7014r13"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrb1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7015r14"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrd</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7016r15"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">in_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7017r16"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">i_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7018r17"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">d_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7019r18"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">enable_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-7020r19"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">PID_FIP16</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+<!--l. 191--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-8000"></a>Implementation: FiP32</h4>
+<!--l. 191--><p class="noindent" ><HR> <a 
+ id="dx1-8001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-9" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-9-1g"><col 
+id="TBL-9-1"><col 
+id="TBL-9-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-9-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-9-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-9-1-2"  
+class="td11">  FiP32               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-9-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-9-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-9-2-2"  
+class="td11"> 3250</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-9-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-9-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-9-3-2"  
+class="td11">  1.0                   </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-9-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-9-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-9-4-2"  
+class="td11"> PID_FiP32.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-9-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-9-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-9-5-2"  
+class="td11">  PID_FiP32.h    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-9-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-9-6-1"  
+class="td
+11">             </td></tr></table>
+</div>
+<!--l. 204--><p class="noindent" >32 Bit Fixed Point Implementation
+                                                                                
+                                                                                
+<div class="tabular"> <table id="TBL-10" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-10-1g"><col 
+id="TBL-10-1"></colgroup><colgroup id="TBL-10-2g"><col 
+id="TBL-10-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-10-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Controller Parameters</span></div></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-2-1"  
+class="td11"> <!--l. 207--><p class="noindent" >b0       </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-2-2"  
+class="td11">  <!--l. 207--><p class="noindent" >Integral
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-3-1"  
+class="td11">  <!--l. 209--><p class="noindent" >b1                                          </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-3-2"  
+class="td11">  <!--l. 209--><p class="noindent" >Proportional
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-4-1"  
+class="td11">  <!--l. 211--><p class="noindent" >b0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-4-2"  
+class="td11">  <!--l. 211--><p class="noindent" >Derivational
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-5-1"  
+class="td11">  <!--l. 213--><p class="noindent" >b1d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-5-2"  
+class="td11">  <!--l. 213--><p class="noindent" >Derivational
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-6-1"  
+class="td11">  <!--l. 215--><p class="noindent" >a0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-6-2"  
+class="td11">  <!--l. 215--><p class="noindent" >Derivational
+    coefficient
+    a0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-7-1"  
+class="td11">  <!--l. 217--><p class="noindent" >sfrb0                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-7-2"  
+class="td11">  <!--l. 217--><p class="noindent" >Shift
+    factor
+    for
+    PI
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-8-1"  
+class="td11">  <!--l. 219--><p class="noindent" >sfrb1                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-8-2"  
+class="td11">  <!--l. 219--><p class="noindent" >Shift
+    factor
+    for
+    PI
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-9-1"  
+class="td11">  <!--l. 221--><p class="noindent" >sfrd                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-9-2"  
+class="td11">  <!--l. 221--><p class="noindent" >Shift
+    factor
+    for
+    D
+    coefficients
+    b0d
+    and
+    b1d                                                                                                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-10-1"  
+class="td11">  <!--l. 223--><p class="noindent" >in_old                                    </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-10-2"  
+class="td11">  <!--l. 223--><p class="noindent" >Input
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-11-1"  
+class="td11">  <!--l. 225--><p class="noindent" >i_old                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-11-2"  
+class="td11">  <!--l. 225--><p class="noindent" >Integrator
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-12-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-12-1"  
+class="td11">  <!--l. 227--><p class="noindent" >d_old                                     </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-12-2"  
+class="td11">  <!--l. 227--><p class="noindent" >Derivative
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-13-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-13-1"  
+class="td11">  <!--l. 229--><p class="noindent" >enable_old                            </td><td  style="white-space:wrap; text-align:left;" id="TBL-10-13-2"  
+class="td11">  <!--l. 229--><p class="noindent" >Enable
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-10-14-"><td  style="white-space:wrap; text-align:left;" id="TBL-10-14-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<!--l. 234--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 235-->
+<div class="lstlisting" id="listing-3"><span class="label"><a 
+ id="x1-8002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Init</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8006r5"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Enable</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8007r6"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8008r7"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8009r8"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8010r9"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8011r10"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8012r11"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">a0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8013r12"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrb0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8014r13"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrb1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8015r14"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">sfrd</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8016r15"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">in_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8017r16"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">i_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8018r17"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">d_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8019r18"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">enable_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-8020r19"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">PID_FIP32</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+<!--l. 260--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-9000"></a>Implementation: Float32</h4>
+<!--l. 260--><p class="noindent" ><HR> <a 
+ id="dx1-9001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-11" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-11-1g"><col 
+id="TBL-11-1"><col 
+id="TBL-11-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-11-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-11-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-11-1-2"  
+class="td11">  Float32               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-11-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-11-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-11-2-2"  
+class="td11"> 3251</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-11-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-11-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-11-3-2"  
+class="td11">  0.1                      </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-11-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-11-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-11-4-2"  
+class="td11"> PID_Float32.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-11-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-11-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-11-5-2"  
+class="td11">  PID_Float32.h    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-11-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-11-6-1"  
+class="td
+11">             </td></tr></table>
+</div>
+<!--l. 273--><p class="noindent" >32 Bit Floating Point Implementation
+                                                                                
+                                                                                
+<div class="tabular"> <table id="TBL-12" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-12-1g"><col 
+id="TBL-12-1"></colgroup><colgroup id="TBL-12-2g"><col 
+id="TBL-12-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-12-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Controller Parameters</span></div></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-2-1"  
+class="td11"> <!--l. 276--><p class="noindent" >b0       </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-2-2"  
+class="td11">  <!--l. 276--><p class="noindent" >Integral
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-3-1"  
+class="td11">  <!--l. 278--><p class="noindent" >b1                                          </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-3-2"  
+class="td11">  <!--l. 278--><p class="noindent" >Proportional
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-4-1"  
+class="td11">  <!--l. 280--><p class="noindent" >b0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-4-2"  
+class="td11">  <!--l. 280--><p class="noindent" >Derivational
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-5-1"  
+class="td11">  <!--l. 282--><p class="noindent" >b1d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-5-2"  
+class="td11">  <!--l. 282--><p class="noindent" >Derivational
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-6-1"  
+class="td11">  <!--l. 284--><p class="noindent" >a0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-6-2"  
+class="td11">  <!--l. 284--><p class="noindent" >Derivational
+    coefficient
+    a0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-7-1"  
+class="td11">  <!--l. 286--><p class="noindent" >in_old                                    </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-7-2"  
+class="td11">  <!--l. 286--><p class="noindent" >Input
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-8-1"  
+class="td11">  <!--l. 288--><p class="noindent" >i_old                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-8-2"  
+class="td11">  <!--l. 288--><p class="noindent" >Integrator
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-9-1"  
+class="td11">  <!--l. 290--><p class="noindent" >d_old                                     </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-9-2"  
+class="td11">  <!--l. 290--><p class="noindent" >Derivative
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-10-1"  
+class="td11">  <!--l. 292--><p class="noindent" >enable_old                            </td><td  style="white-space:wrap; text-align:left;" id="TBL-12-10-2"  
+class="td11">  <!--l. 292--><p class="noindent" >Enable
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-12-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-12-11-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<!--l. 297--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 298-->
+<div class="lstlisting" id="listing-4"><span class="label"><a 
+ id="x1-9002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Init</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9006r5"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Enable</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9007r6"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9008r7"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9009r8"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9010r9"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9011r10"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9012r11"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">a0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9013r12"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">in_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9014r13"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">i_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9015r14"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float32</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">d_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9016r15"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">enable_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-9017r16"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">PID_FLOAT32</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+<!--l. 320--><p class="noindent" >
+<h4 class="likesubsectionHead"><a 
+ id="x1-10000"></a>Implementation: Float64</h4>
+<!--l. 320--><p class="noindent" ><HR> <a 
+ id="dx1-10001"></a> <!--tex4ht:inline--><div class="tabular"> <table id="TBL-13" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-13-1g"><col 
+id="TBL-13-1"><col 
+id="TBL-13-2"></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-13-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-13-1-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Name           </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-13-1-2"  
+class="td11">  Float64               </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-13-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-13-2-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">ID </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-13-2-2"  
+class="td11"> 3252</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-13-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-13-3-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">Revision       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-13-3-2"  
+class="td11">  0.1                      </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-13-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-13-4-1"  
+class="td11"> <span 
+class="phvb8t-x-x-108">C filename </span></td> <td  style="white-space:nowrap; text-align:left;" id="TBL-13-4-2"  
+class="td11"> PID_Float64.c</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-13-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-13-5-1"  
+class="td11">  <span 
+class="phvb8t-x-x-108">H filename    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-13-5-2"  
+class="td11">  PID_Float64.h    </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-13-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-13-6-1"  
+class="td
+11">             </td></tr></table>
+</div>
+<!--l. 333--><p class="noindent" >64 Bit Floating Point Implementation
+                                                                                
+                                                                                
+<div class="tabular"> <table id="TBL-14" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-14-1g"><col 
+id="TBL-14-1"></colgroup><colgroup id="TBL-14-2g"><col 
+id="TBL-14-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-1-"><td colspan="2" style="white-space:nowrap; text-align:left;" id="TBL-14-1-1"  
+class="td11">  <div class="multicolumn"  style="white-space:nowrap; text-align:left;"><span 
+class="phvb8t-x-x-108">Controller Parameters</span></div></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-2-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-2-1"  
+class="td11"> <!--l. 336--><p class="noindent" >b0       </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-2-2"  
+class="td11">  <!--l. 336--><p class="noindent" >Integral
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-3-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-3-1"  
+class="td11">  <!--l. 338--><p class="noindent" >b1                                          </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-3-2"  
+class="td11">  <!--l. 338--><p class="noindent" >Proportional
+    coefficient                                                                                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-4-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-4-1"  
+class="td11">  <!--l. 340--><p class="noindent" >b0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-4-2"  
+class="td11">  <!--l. 340--><p class="noindent" >Derivational
+    coefficient
+    b0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-5-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-5-1"  
+class="td11">  <!--l. 342--><p class="noindent" >b1d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-5-2"  
+class="td11">  <!--l. 342--><p class="noindent" >Derivational
+    coefficient
+    b1                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-6-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-6-1"  
+class="td11">  <!--l. 344--><p class="noindent" >a0d                                        </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-6-2"  
+class="td11">  <!--l. 344--><p class="noindent" >Derivational
+    coefficient
+    a0                                                                                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-7-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-7-1"  
+class="td11">  <!--l. 346--><p class="noindent" >in_old                                    </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-7-2"  
+class="td11">  <!--l. 346--><p class="noindent" >Input
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-8-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-8-1"  
+class="td11">  <!--l. 348--><p class="noindent" >i_old                                      </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-8-2"  
+class="td11">  <!--l. 348--><p class="noindent" >Integrator
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-9-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-9-1"  
+class="td11">  <!--l. 350--><p class="noindent" >d_old                                     </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-9-2"  
+class="td11">  <!--l. 350--><p class="noindent" >Derivative
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-10-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-10-1"  
+class="td11">  <!--l. 352--><p class="noindent" >enable_old                            </td><td  style="white-space:wrap; text-align:left;" id="TBL-14-10-2"  
+class="td11">  <!--l. 352--><p class="noindent" >Enable
+    value
+    of
+    previous
+    cycle                                                                                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-11-"><td  style="white-space:wrap; text-align:left;" id="TBL-14-11-1"  
+class="td11">                        </td></tr></table></div><br 
+class="newline" />
+<!--l. 357--><p class="noindent" ><span 
+class="phvb8t-x-x-108">Data Structure:  </span><!--l. 358-->
+<div class="lstlisting" id="listing-5"><span class="label"><a 
+ id="x1-10002r1"></a></span><span 
+class="phvb8t-x-x-98">typedef</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvb8t-x-x-98">struct</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">{</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10003r2"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">uint16</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">ID</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10004r3"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">In</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10005r4"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Init</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10006r5"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="cmsy-10x-x-109">*</span><span 
+class="phvr8t-x-x-98">Enable</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10007r6"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">Out</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10008r7"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10009r8"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10010r9"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10011r10"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">b1d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10012r11"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">a0d</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10013r12"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">in_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10014r13"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">i_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10015r14"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">float64</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">d_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10016r15"></a></span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">int8</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">enable_old</span><span 
+class="phvr8t-x-x-98">;</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><br /><span class="label"><a 
+ id="x1-10017r16"></a></span><span 
+class="phvr8t-x-x-98">}</span><span 
+class="phvr8t-x-x-98">&#x00A0;</span><span 
+class="phvr8t-x-x-98">PID_FLOAT64</span><span 
+class="phvr8t-x-x-98">;</span>
+</div>
+                                                                                
+                                                                                
+ 
+</body></html> 
+
+                                                                                
+                                                                                
+                                                                                
+
+

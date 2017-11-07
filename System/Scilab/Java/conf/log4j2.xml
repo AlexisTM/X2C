@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+$LastChangedRevision: 539 $
+
+This file is part of X2C. http://www.mechatronic-simulation.org/
+
+Copyright (c) 2013, Linz Center of Mechatronics GmbH (LCM) http://www.lcm.at/
+All rights reserved.
+-->
+<!--Dlog4j.configurationFile="${project_loc}/conf/log4j2.xml" -->
+<configuration status="OFF" verbose="OFF" monitorInterval="10" name="X2C Xcos">
+    <appenders>
+        <Console name="Console" target="SYSTEM_ERR">
+            <PatternLayout pattern="%-5level %class{36} %L %M - %msg%xEx%n" />
+            <filters>
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+            </filters>
+        </Console>
+        <File name="log" fileName="log/log4j.log" append="false" locking="true">
+            <PatternLayout pattern="%d %5r %-10level %-20marker %class{36} %L %M - %msg%xEx%n" />
+        </File>
+    </appenders>
+    <loggers>
+        <root level="INFO">
+            <appender-ref ref="Console" />
+        </root>
+        <logger name="at.lcm.x2c" level="ALL" additivity="true">
+            <appender-ref ref="log" />
+        </logger>
+    </loggers>
+</configuration>

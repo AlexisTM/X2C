@@ -1,0 +1,64 @@
+\XtoCValidation{TDSystemO1 Float64 CPU TMS320F2808}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2016-02-19 \tabularnewline
+\textbf{Target controller} & TMS320F2808 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Control block TDSystemO1.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 174 \tabularnewline \hline
+\textbf{CPU cycles} & 771 & 1133 & ... & 1145 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -0 & -0.1 & ... & -0.6 \tabularnewline \hline
+\textbf{In} & -0 & -0.1 & ... & -0.6 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{A} & \multicolumn{4}{c|}{0.7} \tabularnewline \hline
+\textbf{B} & \multicolumn{4}{c|}{0.38} \tabularnewline \hline
+\textbf{C} & \multicolumn{4}{c|}{0.33} \tabularnewline \hline
+\textbf{D} & \multicolumn{4}{c|}{0.1} \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & -0 & -0.01 & ... & -0.311 \tabularnewline \hline
+\textbf{Exp. Out} & -0 & -0.01 & ... & -0.311 \tabularnewline \hline
+\textbf{Out (DSP)} & -0 & -0.01 & ... & -0.311 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & -0 & -0.01 & ... & -0.311 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$2.1684e-16 ($\pm$2000 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 771 \tabularnewline \hline
+Max CPU cycles & 1210 \tabularnewline \hline
+Avg CPU cycles & 1094 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for Control block TDSystemO1.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 6 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{A} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{B} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{C} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{D} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{d11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{a11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{b11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{c11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{Exp. d11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{Exp. a11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{Exp. b11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\textbf{Exp. c11} & 0 & 0.1 & ... & -0.1 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}

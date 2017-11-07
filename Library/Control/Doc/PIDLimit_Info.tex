@@ -1,0 +1,13 @@
+Each fixed point implementation uses the next higher integer datatype for the integrational value storage variable.
+
+A rising flank at the \textit{Enable} inport will preload the integrational part with the value present on the \textit{Init} inport.
+\newline
+
+\noindent
+Transfer function (zero-order hold discretization method):
+\begin{eqnarray*}
+	G(z) &=& K_{P} + K_{I}T_{s}\frac{1}{z-1} + K_{D}\omega_{c}\frac{z-1}{z-e^{-\omega_{c}T_{s}}}
+\end{eqnarray*}
+
+\paragraph{FiP8 bug:} When using the TI compiler the step response of the derivative part doesn't return to zero, but generates an overflow at zero crossing if the derivative parameter value is too high.
+\paragraph{Developer note:} The fixed point implementation source code of this block is used for block \textit{PID}.

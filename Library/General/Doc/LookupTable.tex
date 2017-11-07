@@ -1,0 +1,140 @@
+\XtoCBlock{LookupTable}
+\label{block:LookupTable}
+\begin{figure}[H]\includegraphics{LookupTable}\end{figure} 
+
+\begin{XtoCtabular}{Inports}
+In & Table index\tabularnewline
+\hline
+\end{XtoCtabular}
+
+
+\begin{XtoCtabular}{Outports}
+Out & Table output\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Mask Parameters}
+Lookup & Look-up Table\tabularnewline
+\hline
+\end{XtoCtabular}
+
+\subsubsection*{Description:}
+Look-up Table with 256+1 values.
+
+
+
+  Note: 257th value is used for preventing index overflow during interpolation.
+
+      -> for periodic signals the 257th value should be set equal to 1st value
+
+      -> for non-periodic signals the 257th value should be set equal to 256th value
+
+\subsubsection*{Implementations:}
+\begin{tabular}{l l}
+\textbf{FiP8} & 8 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP16} & 16 Bit Fixed Point Implementation\tabularnewline
+\textbf{FiP32} & 32 Bit Fixed Point Implementation\tabularnewline
+\end{tabular}
+
+\XtoCImplementation{FiP8}
+\index{Block ID!160}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP8 \tabularnewline
+\textbf{ID} & 160 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & LookupTable\_FiP8.c \tabularnewline
+\textbf{H filename} & LookupTable\_FiP8.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+8 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+Table & Lookup table content\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int8          *In;
+     int8          Out;
+     const int8    *Table;
+} LOOKUPTABLE_FIP8;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_LookupTable_FiP8.tex}{}{}
+\fi
+\XtoCImplementation{FiP16}
+\index{Block ID!161}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP16 \tabularnewline
+\textbf{ID} & 161 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & LookupTable\_FiP16.c \tabularnewline
+\textbf{H filename} & LookupTable\_FiP16.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+16 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+Table & Lookup table content\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int16         *In;
+     int16         Out;
+     const int16   *Table;
+} LOOKUPTABLE_FIP16;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_LookupTable_FiP16.tex}{}{}
+\fi
+\XtoCImplementation{FiP32}
+\index{Block ID!162}
+\nopagebreak[0]
+% Implementation details
+\begin{tabular}{l l}
+\textbf{Name} & FiP32 \tabularnewline
+\textbf{ID} & 162 \tabularnewline
+\textbf{Revision} & 0.1 \tabularnewline
+\textbf{C filename} & LookupTable\_FiP32.c \tabularnewline
+\textbf{H filename} & LookupTable\_FiP32.h \tabularnewline
+\end{tabular}
+\vspace{1ex}
+
+32 Bit Fixed Point Implementation
+
+\begin{XtoCtabular}{Controller Parameters}
+Table & Lookup table content\tabularnewline
+\hline
+\end{XtoCtabular}
+
+% Implementation data structure
+\XtoCDataStruct{Data Structure:}
+\begin{lstlisting}
+typedef struct {
+     uint16        ID;
+     int32         *In;
+     int32         Out;
+     const int32   *Table;
+} LOOKUPTABLE_FIP32;
+\end{lstlisting}
+
+\ifdefined \AddTestReports
+\InputIfFileExists{\XcHomePath/Library/General/Doc/Test_LookupTable_FiP32.tex}{}{}
+\fi

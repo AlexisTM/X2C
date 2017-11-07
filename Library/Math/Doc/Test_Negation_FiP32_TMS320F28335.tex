@@ -1,0 +1,35 @@
+\XtoCValidation{Negation FiP32 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Math block Negation.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & ... & 37 \tabularnewline \hline
+\textbf{CPU cycles} & 25 & 25 & ... & 25 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & -2147483647 & -2028179001 & ... & 2147483647 \tabularnewline \hline
+\textbf{In} & -1 & -0.944 & ... & 1 \tabularnewline \hline
+\multicolumn{5}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out} & 1 & 0.944 & ... & -1 \tabularnewline \hline
+\textbf{Exp. Out} & 1 & 0.944 & ... & -1 \tabularnewline \hline
+\textbf{Out (DSP)} & 2147483647 & 2028179001 & ... & -2147483647 \tabularnewline \hline
+\textbf{Exp. Out (DSP)} & 2147483647 & 2028179001 & ... & -2147483647 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out & $\pm$4.6566e-10 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 25 \tabularnewline \hline
+Max CPU cycles & 25 \tabularnewline \hline
+Avg CPU cycles & 25 \tabularnewline \hline
+\end{XtoCtabular}

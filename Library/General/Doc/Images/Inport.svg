@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="46mm" height="21mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4600 2100"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#009846;stroke-width:75}
+    .fil0 {fill:none}
+    .fil1 {fill:#009846;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polyline class="fil0 str0" points="3550,50 50,50 50,2050 3550,2050 "/>
+  <path class="fil0 str0" d="M3550 2050c552,0 1000,-448 1000,-1000 0,-552 -448,-1000 -1000,-1000"/>
+  <polygon class="fil1" points="1608,1558 1474,1558 1474,548 1608,548 "/>
+  <polygon id="1" class="fil1" points="2643,1558 2506,1558 1978,765 1975,765 1975,1558 1848,1558 1848,548 1985,548 2512,1341 2515,1341 2515,548 2643,548 "/>
+ </g>
+</svg>

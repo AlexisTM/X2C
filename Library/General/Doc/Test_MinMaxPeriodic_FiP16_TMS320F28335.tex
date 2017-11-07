@@ -1,0 +1,42 @@
+\XtoCValidation{MinMaxPeriodic FiP16 CPU TMS320F28335}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & TMS320F28335 \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for General block MinMaxPeriodic.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 112 \tabularnewline \hline
+\textbf{CPU cycles} & 110 & 116 & 116 & 116 & ... & 106 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In (DSP)} & 0 & -4552 & -8966 & -13107 & ... & 0 \tabularnewline \hline
+\textbf{phi (DSP)} & -32767 & -30948 & -29127 & -27307 & ... & -32767 \tabularnewline \hline
+\textbf{In} & -0 & -0.139 & -0.274 & -0.4 & ... & 0 \tabularnewline \hline
+\textbf{phi} & -1 & -0.944 & -0.889 & -0.833 & ... & -1 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{max} & 0 & 0 & 0 & 0 & ... & 0.9 \tabularnewline \hline
+\textbf{min} & 0 & 0 & 0 & 0 & ... & 0.1 \tabularnewline \hline
+\textbf{Exp. max} & 0 & 0 & 0 & 0 & ... & 0.9 \tabularnewline \hline
+\textbf{Exp. min} & 0 & 0 & 0 & 0 & ... & 0.1 \tabularnewline \hline
+\textbf{max (DSP)} & 0 & 0 & 0 & 0 & ... & 29491 \tabularnewline \hline
+\textbf{min (DSP)} & 0 & 0 & 0 & 0 & ... & 3277 \tabularnewline \hline
+\textbf{Exp. max (DSP)} & 0 & 0 & 0 & 0 & ... & 29491 \tabularnewline \hline
+\textbf{Exp. min (DSP)} & 0 & 0 & 0 & 0 & ... & 3277 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance max & $\pm$3.0518e-05 ($\pm$1 LSB) \tabularnewline \hline
+Tolerance min & $\pm$3.0518e-05 ($\pm$1 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 106 \tabularnewline \hline
+Max CPU cycles & 116 \tabularnewline \hline
+Avg CPU cycles & 114 \tabularnewline \hline
+\end{XtoCtabular}

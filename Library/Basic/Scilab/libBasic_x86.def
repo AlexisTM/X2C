@@ -1,0 +1,3 @@
+LIBRARY    libBasic_x86.dll
+EXPORTS
+	x2c_DoNothing_C

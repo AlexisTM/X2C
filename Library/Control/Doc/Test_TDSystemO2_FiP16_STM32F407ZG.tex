@@ -1,0 +1,91 @@
+\XtoCValidation{TDSystemO2 FiP16 CPU STM32F407ZG}
+\begin{tabular}{l l}
+\textbf{Date of Test} & 2017-03-02 \tabularnewline
+\textbf{Target controller} & STM32F407ZG \tabularnewline
+\end{tabular}
+\vspace{1ex}
+\XtoCTestCase{Inport test}{1}
+Inport test for Control block TDSystemO2.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|c|c|c|c|>{\centering\arraybackslash}X|c|}
+\hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 & 4 & ... & 174 \tabularnewline \hline
+\textbf{CPU cycles} & 110 & 110 & 110 & 110 & ... & 110 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Inputs}} \tabularnewline \hline
+\textbf{In1 (DSP)} & 0 & -3271 & -6510 & -9684 & ... & -19661 \tabularnewline \hline
+\textbf{In2 (DSP)} & -32767 & -32604 & -32115 & -31304 & ... & -19661 \tabularnewline \hline
+\textbf{In1} & -0 & -0.1 & -0.199 & -0.296 & ... & -0.6 \tabularnewline \hline
+\textbf{In2} & -1 & -0.995 & -0.98 & -0.955 & ... & -0.6 \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Parameters}} \tabularnewline \hline
+\textbf{A} & \multicolumn{6}{c|}{[1x4]} \tabularnewline \hline
+\textbf{B} & \multicolumn{6}{c|}{[1x4]} \tabularnewline \hline
+\multicolumn{7}{|l|}{\cellcolor[gray]{0.9}\textit{Outputs}} \tabularnewline \hline
+\textbf{Out1} & 0 & -0.28 & -0.44 & -0.592 & ... & -0.898 \tabularnewline \hline
+\textbf{Out2} & 0 & -0.08 & -0.206 & -0.252 & ... & -0.432 \tabularnewline \hline
+\textbf{Exp. Out1} & 0 & -0.28 & -0.44 & -0.592 & ... & -0.898 \tabularnewline \hline
+\textbf{Exp. Out2} & 0 & -0.08 & -0.206 & -0.252 & ... & -0.432 \tabularnewline \hline
+\textbf{Out1 (DSP)} & 0 & -9175 & -14424 & -19405 & ... & -29414 \tabularnewline \hline
+\textbf{Out2 (DSP)} & 0 & -2621 & -6737 & -8259 & ... & -14158 \tabularnewline \hline
+\textbf{Exp. Out1 (DSP)} & 0 & -9175 & -14422 & -19402 & ... & -29410 \tabularnewline \hline
+\textbf{Exp. Out2 (DSP)} & 0 & -2621 & -6736 & -8258 & ... & -14155 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
+
+\begin{XtoCtabular}{Test settings}
+Tolerance Out1 & $\pm$2.4414e-04 ($\pm$8 LSB) \tabularnewline \hline
+Tolerance Out2 & $\pm$2.4414e-04 ($\pm$8 LSB) \tabularnewline \hline
+\end{XtoCtabular}
+
+\begin{XtoCtabular}{Test statistics}
+Min CPU cycles & 108 \tabularnewline \hline
+Max CPU cycles & 110 \tabularnewline \hline
+Avg CPU cycles & 109 \tabularnewline \hline
+\end{XtoCtabular}
+\XtoCTestCase{Conversion test}{1}
+Conversion test for Control block TDSystemO2.
+
+\vspace{1em}
+\begin{tabularx}{\textwidth}{|c|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+\hline
+\multicolumn{4}{|l|}{\cellcolor[gray]{0.8}\textbf{Test results}} \tabularnewline \hline
+\textbf{Time step} & 1 & 2 & 3 \tabularnewline \hline
+\multicolumn{4}{|l|}{\cellcolor[gray]{0.9}\textit{Mask parameters}} \tabularnewline \hline
+\textbf{A} & [1x4] & [1x4] & [1x4] \tabularnewline \hline
+\textbf{B} & [1x4] & [1x4] & [1x4] \tabularnewline \hline
+\multicolumn{4}{|l|}{\cellcolor[gray]{0.9}\textit{Controller parameters}} \tabularnewline \hline
+\textbf{a12} & 20480 & 16384 & 3277 \tabularnewline \hline
+\textbf{a21} & 20480 & 16384 & 6554 \tabularnewline \hline
+\textbf{sfra11} & 15 & 15 & 15 \tabularnewline \hline
+\textbf{a22} & 30720 & 24576 & 9830 \tabularnewline \hline
+\textbf{sfra12} & 11 & 14 & 15 \tabularnewline \hline
+\textbf{a11} & 0 & 0 & 0 \tabularnewline \hline
+\textbf{b11} & 0 & 0 & 0 \tabularnewline \hline
+\textbf{sfra21} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{b12} & 20480 & 16384 & 3277 \tabularnewline \hline
+\textbf{b21} & 20480 & 16384 & 6554 \tabularnewline \hline
+\textbf{sfrb11} & 15 & 15 & 15 \tabularnewline \hline
+\textbf{b22} & 30720 & 24576 & 9830 \tabularnewline \hline
+\textbf{sfra22} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{sfrb21} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{sfrb12} & 11 & 14 & 15 \tabularnewline \hline
+\textbf{sfrb22} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{Exp. a12} & 20480 & 16384 & 3277 \tabularnewline \hline
+\textbf{Exp. a21} & 20480 & 16384 & 6554 \tabularnewline \hline
+\textbf{Exp. sfra11} & 15 & 15 & 15 \tabularnewline \hline
+\textbf{Exp. a22} & 30720 & 24576 & 9830 \tabularnewline \hline
+\textbf{Exp. sfra12} & 11 & 14 & 15 \tabularnewline \hline
+\textbf{Exp. a11} & 0 & 0 & 0 \tabularnewline \hline
+\textbf{Exp. b11} & 0 & 0 & 0 \tabularnewline \hline
+\textbf{Exp. sfra21} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{Exp. b12} & 20480 & 16384 & 3277 \tabularnewline \hline
+\textbf{Exp. b21} & 20480 & 16384 & 6554 \tabularnewline \hline
+\textbf{Exp. sfrb11} & 15 & 15 & 15 \tabularnewline \hline
+\textbf{Exp. b22} & 30720 & 24576 & 9830 \tabularnewline \hline
+\textbf{Exp. sfra22} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{Exp. sfrb21} & 10 & 13 & 15 \tabularnewline \hline
+\textbf{Exp. sfrb12} & 11 & 14 & 15 \tabularnewline \hline
+\textbf{Exp. sfrb22} & 10 & 13 & 15 \tabularnewline \hline
+\end{tabularx}
+\vspace{1ex}
