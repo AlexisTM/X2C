@@ -92,7 +92,9 @@ xmlList = [];
 
 // go through XML list
 for curXML = xmlFiles
-    if ~strcmp(part(curXML, $-3:$), ".xml") then
+    temp = part(curXML, $-3:$)
+    convstr(temp,"l")
+    if ~strcmp(temp, ".xml") then
         // add file name with *.xml ending
         xmlList = [xmlList, curXML];
     end

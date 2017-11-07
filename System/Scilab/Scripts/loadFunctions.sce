@@ -46,7 +46,9 @@ Files = ls(ScriptDir)';
 // go through file list
 for funcName = Files
     if isfile([ScriptDir + fs + funcName]) then
-        if ~strcmp(part(funcName, $-3:$), ".sci") then
+        temp = part(funcName, $-3:$)
+        convstr(temp,"l")
+        if ~strcmp(temp, ".sci") then
             // load function if funcName ends with *.sci
             exec([ScriptDir + fs + funcName], -1);
         end
